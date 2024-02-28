@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EITACIES</title>
+
+    <!--== Favicon ==-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/home/favicon.svg"
+      type="image/x-icon"
+    />
+    <!--== Google Fonts ==-->
+
+    <!--== Bootstrap CSS ==-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--== Owl Carousel CSS ==-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- // -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Icofont Min Icons CSS ==-->
+    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <!--== Fontello CSS ==-->
+    <link href="assets/css/fontello.css" rel="stylesheet" />
+    <!--== Vandella CSS ==-->
+    <link href="assets/css/font-vandella.css" rel="stylesheet" />
+    <!--== Animate CSS ==-->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!--== Aos CSS ==-->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!--== FancyBox CSS ==-->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <!--== Slicknav CSS ==-->
+    <link href="assets/css/slicknav.css" rel="stylesheet" />
+    <link href="assets/css/slick-theme.css" rel="stylesheet" />
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <!--== Swiper CSS ==-->
+    <link href="assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!--== Main Style CSS ==-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/style-new.css" rel="stylesheet" />
+    <link href="assets/css/custom1.css" rel="stylesheet" />
+    <style>
+      @media only screen and (max-width: 730px) {
+        .hideabt {
+          display: none;
+        }
+        .hideabt1 {
+          visibility: hidden;
+        }
+      }
+      .slider {
+        margin: 50px 0;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .padding {
+        padding: 15px;
+      }
+      .padding-v {
+        height: 150px;
+        margin-right: 21px;
+      }
+      .padding-v p {
+        height: 150px;
+      }
+      .gtco-testimonials .owl-dots {
+        display: none;
+      }
+      .card-test {
+        padding: 15px 15px 15px 25px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main-content">
+      <!--wrapper start-->
+      <div class="wrapper home-default-wrapper">
+        <!--== Start Header Wrapper ==-->
+        <header class="header-wrapper">
+          <div class="header-area header-default sticky-header">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-3 col-md-3 col-lg-2">
+                  <div class="header-logo-area">
+                    <a href="index">
+                      <img
+                        class="logo-main"
+                        src="assets/img/home/logo-white.svg"
+                        alt="Logo"
+                      />
+                      <img
+                        class="logo-light"
+                        src="assets/img/home/logo-blue.svg"
+                        alt="Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+                  <div class="header-align">
+                    <div class="header-navigation-area">
+                      <ul class="main-menu nav justify-content-center">
+                        <li class="active"><a href="index">Home</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li>
+                          <a href="JavaScript:void(0);" onclick="openNavSer()"
+                            >Services <i class="fa fa-angle-down"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="JavaScript:void(0);" onclick="openNavInd()"
+                            >Industries <i class="fa fa-angle-down"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="JavaScript:void(0);" onclick="openNavCar()"
+                            >Careers <i class="fa fa-angle-down"></i
+                          ></a>
+                        </li>
+                        <li class="has-submenu full-width">
+                          <a href="https://eitacies.com/blog/">Blog</a>
+                        </li>
+                        <li class="has-submenu full-width">
+                          <a href="contact-us">Contact Us</a>
+                        </li>
+                        <!--<li class="contact"><a href="contact"></a></li>-->
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Mobile Navigation-->
+                  <div class="mobile-header-navigation-area">
+                    <span class="menu-icon">
+                      <div id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </span>
+                    <ul class="mm">
+                      <li class="active"><a href="index">Home</a></li>
+                      <li><a href="about-us">About Us</a></li>
+                      <li class="nav-dropdown">
+                        <a href="#!">Services</a>
+                        <ul>
+                          <li class="mc"></li>
+                          <li class="nav-dropdown">
+                            <a href="services/consult">Consult</a>
+                            <ul>
+                              <li>
+                                <a href="services/consult/prototyping-solutions"
+                                  >Prototyping Solutions</a
+                                >
+                              </li>
+                              <li>
+                                <a href="services/engineer"
+                                  >Engineering Services</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="services/consult/sustainability-support"
+                                  >Sustainability Support</a
+                                >
+                              </li>
+                              <li>
+                                <a href="services/consult/accelerated-solutions"
+                                  >Accelerated Solutions</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-dropdown">
+                            <a href="services/engineer">Engineer</a>
+                            <ul>
+                              <li>
+                                <a
+                                  href="services/engineer/research-and-development"
+                                  >Research & Development</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="services/engineer/cloud-transformation-and-security"
+                                  >Cloud Transformation & Security</a
+                                >
+                              </li>
+                              <li>
+                                <a href="services/engineer/devsecops"
+                                  >DevSecOps</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="services/engineer/machine-learning-artificial-intelligence"
+                                  >Machine Learning & Artificial Intelligence</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="services/engineer/business-intelligence"
+                                  >Business Intelligence</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="services/engineer/enterprise-integration"
+                                  >Enterprise Integration</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-dropdown">
+                            <a href="services/execute">Execute</a>
+                            <ul>
+                              <li>
+                                <a href="services/execute/#managed-services"
+                                  >Managed Services</a
+                                >
+                              </li>
+                              <li>
+                                <a href="services/execute/#staffing-solutions"
+                                  >Staffing Solutions</a
+                                >
+                              </li>
+                              <li>
+                                <a href="services/execute/startup-enabler"
+                                  >Startup Enabler</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-dropdown">
+                        <a href="careers/">Careers</a>
+                        <ul>
+                          <li>
+                            <a href="careers/#life-at-eitacies"
+                              >Life at EITACIES</a
+                            >
+                          </li>
+                          <li>
+                            <a href="careers/professionals">Open Positions</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-dropdown">
+                        <a href="industries/">Industries</a>
+                        <ul>
+                          <li>
+                            <a href="industries/retail-sector">Retail Sector</a>
+                          </li>
+                          <li><a href="industries/insurance">Insurance</a></li>
+                          <li>
+                            <a href="industries/healthcare">Healthcare</a>
+                          </li>
+                          <li>
+                            <a href="industries/manufacturing">Manufacturing</a>
+                          </li>
+                          <li>
+                            <a href="industries/energy-and-utilities"
+                              >Energy & Utilities</a
+                            >
+                          </li>
+                          <li>
+                            <a href="industries/telecommunications"
+                              >Telecommunications</a
+                            >
+                          </li>
+                          <li>
+                            <a href="industries/media-and-publishing"
+                              >Media & Publishing</a
+                            >
+                          </li>
+                          <li>
+                            <a href="industries/transportation-and-logistics"
+                              >Transportation & Logistics</a
+                            >
+                          </li>
+                          <li>
+                            <a href="industries/banking-and-financial-services"
+                              >Banking & Financial Services</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="https://eitacies.com/blog/">Blog</a></li>
+                      <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <!-- Mobile Navigation-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-menu" class="menu-overlay">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              onclick="closeNavSer()"
+              >&times;</a
+            >
+            <div class="menu-overlay-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="title">
+                          <h4><a href="services/consult">Consult</a></h4>
+                        </li>
+                        <li>
+                          <a href="services/consult/prototyping-solutions"
+                            >Prototyping Solutions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/engineer">Engineering Services</a>
+                        </li>
+                        <li>
+                          <a href="services/consult/sustainability-support"
+                            >Sustainability Support</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/consult/accelerated-solutions"
+                            >Accelerated Solutions</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="title">
+                          <h4><a href="services/engineer">Engineer</a></h4>
+                        </li>
+                        <li>
+                          <a href="services/engineer/research-and-development"
+                            >Research & Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="services/engineer/cloud-transformation-and-security"
+                            >Cloud Transformation & Security</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/engineer/devsecops">DevSecOps</a>
+                        </li>
+                        <li>
+                          <a
+                            href="services/engineer/machine-learning-artificial-intelligence"
+                            >Machine Learning & Artificial Intelligence</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/engineer/business-intelligence"
+                            >Business Intelligence</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/engineer/enterprise-integration"
+                            >Enterprise Integration</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="title">
+                          <h4><a href="services/execute">Execute</a></h4>
+                        </li>
+                        <li>
+                          <a href="services/execute/#managed-services"
+                            >Managed Services</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/execute/#staffing-solutions"
+                            >Staffing Solutions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services/execute/startup-enabler"
+                            >Startup Enabler</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="careers-menu" class="menu-overlay">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              onclick="closeNavCar()"
+              >&times;</a
+            >
+            <div class="menu-overlay-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li class="title">
+                          <h4 style="border-bottom: 1px solid #3aaad0">
+                            <a
+                              href="careers/"
+                              style="color: white; font-size: 25px"
+                              >Careers</a
+                            >
+                          </h4>
+                        </li>
+                        <li>
+                          <a href="careers/#life-at-eitacies"
+                            >Life at EITACIES</a
+                          >
+                        </li>
+                        <li>
+                          <a href="careers/professionals">Open Positions</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="industries-menu" class="menu-overlay">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              onclick="closeNavInd()"
+              >&times;</a
+            >
+            <div class="menu-overlay-content">
+              <div class="container">
+                <div class="row">
+                  <ul style="margin-bottom: 0px">
+                    <li class="title">
+                      <h4 style="border-bottom: 1px solid #3aaad0">
+                        <a
+                          href="industries/"
+                          style="color: white; font-size: 25px"
+                          >Industries</a
+                        >
+                      </h4>
+                    </li>
+                  </ul>
+                  <div class="col-md-4">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li>
+                          <a href="industries/retail-sector">Retail Sector</a>
+                        </li>
+                        <li><a href="industries/insurance">Insurance</a></li>
+                        <li><a href="industries/healthcare">Healthcare</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li>
+                          <a href="industries/manufacturing">Manufacturing</a>
+                        </li>
+                        <li>
+                          <a href="industries/energy-and-utilities"
+                            >Energy & Utilities</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/telecommunications"
+                            >Telecommunications</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="sub-menu-list">
+                      <ul>
+                        <li>
+                          <a href="industries/media-and-publishing"
+                            >Media & Publishing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/transportation-and-logistics"
+                            >Transportation & Logistics</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/banking-and-financial-services"
+                            >Banking & Financial Services</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--== End Header Wrapper ==-->
+
+        <!--== Start Hero Area Wrapper ==-->
+        <section
+          class="banner-services ban"
+          style="background-image: url(assets/img/banners-new/about.jpg)"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="bg-pattern abt">
+                  <h1 class="main-head">Terms and Conditions</h1>
+                  <br />
+                  <!--<a href="contact.html" class="service-btn">READ MORE</a>-->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!--<img src="../assets/services/engineer/enterprise-integration/images/Banner.jpg">-->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--== End Hero Area Wrapper ==-->
+
+        <section class="product-area similar-product-area no-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div class="page-breadcrumb services position-static">
+                  <div class="container text-left">
+                    <ul class="breadcrumb justify-content-center">
+                      <li>
+                        <a href="index.html"><i class="fa fa-home"></i></a>
+                      </li>
+                      <li class="current">Terms and Conditions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container hideabt">
+            <div class="row">
+              <div class="section-title mb-3">
+                <p class="mt-4">
+                  Welcome to the Eitacies website (the "Site"). By accessing or
+                  using the Site, you agree to be bound by the following terms
+                  and conditions (the "Terms of Use"). If you do not agree to
+                  these Terms of Use, you may not access or use the Site.
+                </p>
+                <h3 class="title-services">Use of Site</h3>
+                <p class="mt-4">
+                  The Site and its content are intended for your personal,
+                  non-commercial use. You may not use the Site or its content
+                  for any commercial purpose, including the sale of any products
+                  or services.
+                </p>
+                <h3 class="title-services">Intellectual Property Rights</h3>
+                <p class="mt-4">
+                  All content on the Site, including text, images, graphics,
+                  logos, and software, is the property of Eitacies or its
+                  licensors and is protected by copyright, trademark and other
+                  intellectual property laws. You may not use any content on the
+                  Site for any commercial purpose without the express written
+                  consent of Eitacies.
+                </p>
+                <h3 class="title-services">Disclaimer of Warranties</h3>
+                <p class="mt-4">
+                  The Site and its content are provided "as is" and Eitacies
+                  makes no representations or warranties of any kind, express or
+                  implied, as to the operation of the Site or the information,
+                  content, materials or products included on the Site. Eitacies
+                  does not warrant that the Site or its content will be
+                  uninterrupted or error-free, and Eitacies will not be liable
+                  for any interruptions or errors.
+                </p>
+                <h3 class="title-services">Limitation of Liability</h3>
+                <p class="mt-4">
+                  Eitacies will not be liable for any damages of any kind
+                  arising from the use of the Site or its content, including,
+                  but not limited to, direct, indirect, incidental, punitive and
+                  consequential damages.
+                </p>
+                <h3 class="title-services">Privacy Policy</h3>
+                <p class="mt-4">
+                  Eitacies respects your privacy and is committed to protecting
+                  your personal information. Please refer to our Privacy Policy
+                  for more information on how we collect, use and disclose your
+                  personal information.
+                </p>
+                <h3 class="title-services">Changes to Terms of Use</h3>
+                <p class="mt-4">
+                  Eitacies reserves the right to change these Terms of Use at
+                  any time and will post any changes on the Site. Your continued
+                  use of the Site following any changes to these Terms of Use
+                  constitutes acceptance of those changes.
+                </p>
+                <h3 class="title-services">Governing Law</h3>
+                <p class="mt-4">
+                  These Terms of Use and your use of the Site shall be governed
+                  by and construed in accordance with the laws of the United
+                  States, without giving effect to any principles or conflicts
+                  of law. You agree that any action at law or in equity arising
+                  out of or relating to these Terms of Use shall be filed only
+                  in the state or federal courts located in Santa Clara,
+                  California, and you hereby irrevocably and unconditionally
+                  consent and submit to the exclusive jurisdiction of such
+                  courts over any suit, action or proceeding arising out of
+                  these Terms of Use.
+                </p>
+                <h3 class="title-services">Severability</h3>
+                <p class="mt-4">
+                  If any provision of these Terms of Use is found to be invalid
+                  or unenforceable by a court of competent jurisdiction, such
+                  provision shall be severed from the remainder of these Terms
+                  of Use, which will otherwise remain in full force and effect.
+                </p>
+                <h3 class="title-services">Entire Agreement</h3>
+                <p class="mt-4">
+                  These Terms of Use, together with our Privacy Policy,
+                  constitute the entire agreement between you and Eitacies with
+                  respect to the use of the Site, and supersede all prior or
+                  contemporaneous communications and proposals, whether oral or
+                  written, between you and Eitacies.
+                </p>
+                <p class="mt-4">
+                  Contact Us If you have any questions or concerns about these
+                  Terms of Use, please contact us at info@eitacies.com
+                </p>
+                <h3 class="title-services">Privacy Policy Eitacies</h3>
+                <p class="mt-4">
+                  Introduction Eitacies ("we" or "us") is committed to
+                  protecting the privacy of the personal information of our
+                  customers and website visitors. This Privacy Policy explains
+                  how we collect, use, and disclose personal information about
+                  you through our website, located at www.eitacies.com (the
+                  "Site"). By using the Site, you consent to the collection,
+                  use, and disclosure of your personal information as described
+                  in this Privacy Policy.
+                </p>
+                <h3 class="title-services">Information We Collect</h3>
+                <p class="mt-4">
+                  We may collect personal information from you when you use the
+                  Site, such as your name, email address, phone number, and
+                  other contact information. We may also collect information
+                  about your use of the Site, such as the pages you visit and
+                  the services you use.
+                </p>
+                <h3 class="title-services">
+                  Cookies and other Tracking Technologies
+                </h3>
+                <p class="mt-4">
+                  We use cookies and other tracking technologies to collect
+                  information about your use of the Site. Cookies are small data
+                  files that are placed on your computer or mobile device when
+                  you visit a website. They are widely used in order to make
+                  websites work, or work more efficiently, as well as to provide
+                  information to the owners of the site. We use cookies to
+                  personalize content and ads, to provide social media features
+                  and to analyze our traffic. We also share information about
+                  your use of our site with our social media, advertising and
+                  analytics partners who may combine it with other information
+                  that you've provided to them or that they've collected from
+                  your use of their services.
+                </p>
+                <h3 class="title-services">Use of Information</h3>
+                <h4 class="mt-30">
+                  We may use the information we collect from you to:
+                </h4>
+                <ul class="dott mt-30" style="padding-left: 30px">
+                  <li>Provide and improve the Site and our services;</li>
+                  <li>Respond to your inquiries and fulfill your requests;</li>
+                  <li>
+                    Send you information and updates about our company and
+                    services;
+                  </li>
+                  <li>Personalize your experience on the Site;</li>
+                  <li>Improve the Site and our services; and</li>
+                  <li>
+                    For other purposes that we may disclose to you at the time
+                    we collect your information.
+                  </li>
+                </ul>
+                <h3 class="title-services">Disclosure of Information</h3>
+                <h4 class="mt-30">
+                  We may disclose your personal information to:
+                </h4>
+                <ul class="dott mt-30" style="padding-left: 30px">
+                  <li>Our affiliates and subsidiaries;</li>
+                  <li>
+                    Service providers who provide services to us, such as
+                    website hosting and management, data analysis, payment
+                    processing, order fulfillment, infrastructure provision, IT
+                    services, customer service, email delivery services, credit
+                    card processing, auditing and other similar services;
+                  </li>
+                  <li>
+                    Law enforcement, government officials, or other third
+                    parties as required by law or in response to a subpoena or
+                    other legal request;
+                  </li>
+                  <li>
+                    Other third parties as necessary to protect the rights,
+                    property, or safety of Eitacies, our customers, or others;
+                    and
+                  </li>
+                  <li>
+                    Other third parties as disclosed to you at the time the
+                    information is collected or as otherwise set forth.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer-area mt-2">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3" style="display: flex">
+              <div class="widget-item">
+                <div class="widget-logo-area">
+                  <a href="index">
+                    <img src="assets/img/home/logo-white.svg" alt="Logo" />
+                  </a>
+                </div>
+                <br />
+                <h6 style="color: #61bcc6">Address</h6>
+                <p
+                  class="white"
+                  style="font-weight: 400; font-size: 11px; line-height: 2"
+                >
+                  Great America Technology Park, <br />4701 Patrick Henry Drive,
+                  Building 3, <br />Santa Clara, CA - 95054.
+                  <br />info@eitacies.com
+                </p>
+                <div class="footer-social-links">
+                  <a
+                    href="https://www.expertise.com/ca/santa-clara/software-development"
+                    target="_blank"
+                    ><img
+                      src="assets/img/awards/expertise.svg"
+                      class="footer-ad-wid"
+                  /></a>
+                  <!--<img src="assets/img/awards/expertise.svg" class="footer-ad-wid">-->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="widget-item">
+                <h5><a href="services/consult" class="white">CONSULT</a></h5>
+                <ul>
+                  <li>
+                    <a href="services/consult/prototyping-solutions"
+                      >Prototyping Solutions</a
+                    >
+                  </li>
+                  <li><a href="services/engineer">Engineering Services</a></li>
+                  <li>
+                    <a href="services/consult/sustainability-support"
+                      >Sustainability Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/consult/accelerated-solutions"
+                      >Accelerated Solutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="widget-item">
+                <h5><a href="services/engineer" class="white">ENGINEER</a></h5>
+                <ul>
+                  <li>
+                    <a href="services/engineer/research-and-development"
+                      >Research & Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="services/engineer/cloud-transformation-and-security"
+                      >Cloud Transformation & Security
+                    </a>
+                  </li>
+                  <li><a href="services/engineer/devsecops">DevSecOps</a></li>
+                  <li>
+                    <a
+                      href="services/engineer/machine-learning-artificial-intelligence"
+                      >Machine Learning & Artificial Intelligence</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/engineer/business-intelligence"
+                      >Business Intelligence</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/engineer/enterprise-integration"
+                      >Enterprise Integration</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="widget-item">
+                <h5><a href="services/execute" class="white">EXECUTE</a></h5>
+                <ul>
+                  <li>
+                    <a href="services/execute/#managed-services"
+                      >Managed Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/execute/#staffing-solutions"
+                      >Staffing Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/execute/startup-enabler"
+                      >Startup Enabler</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="widget-item">
+                <h5><a href="../careers/" class="white">CAREERS</a></h5>
+                <ul>
+                  <li>
+                    <a href="../careers/#life-at-eitacies">Life at EITACIES</a>
+                  </li>
+                  <li><a href="../careers/professionals">Open Positions</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="widget-item">
+                <h5><a href="industries/" class="white">INDUSTRIES</a></h5>
+                <ul>
+                  <li><a href="industries/retail-sector">Retail Sector</a></li>
+                  <li><a href="industries/insurance">Insurance</a></li>
+                  <li><a href="industries/healthcare">Healthcare</a></li>
+                  <li><a href="industries/manufacturing">Manufacturing</a></li>
+                  <li>
+                    <a href="industries/energy-and-utilities"
+                      >Energy & Utilities</a
+                    >
+                  </li>
+                  <li>
+                    <a href="industries/telecommunications"
+                      >Telecommunications</a
+                    >
+                  </li>
+                  <li>
+                    <a href="industries/media-and-publishing"
+                      >Media & Publishing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="industries/transportation-and-logistics"
+                      >Transportation & Logistics</a
+                    >
+                  </li>
+                  <li>
+                    <a href="industries/banking-and-financial-services"
+                      >Banking & Financial Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="footer-bottom-content"></div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="container">
+                <div class="widget-item">
+                  <p class="white">© 2023 EITACIES All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-social-links text-center">
+                <a href="https://www.facebook.com/eitacies/" target="_blank"
+                  ><img
+                    src="assets/img/home/facebook.svg"
+                    class="footer-sm-wid"
+                /></a>
+                <a href="https://twitter.com/eitacies" target="_blank"
+                  ><img src="assets/img/home/twitter.svg" class="footer-sm-wid"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/company/eitacies-inc/"
+                  target="_blank"
+                  ><img
+                    src="assets/img/home/linkedin.svg"
+                    class="footer-sm-wid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="container">
+                <div class="widget-item">
+                  <p style="text-align: right">
+                    <a href="terms-and-conditions">Terms & Conditions</a> |<a
+                      href="privacy-policy"
+                    >
+                      Privacy Policy</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--== Scroll Top Button ==-->
+    <div class="scroll-to-top"><span class="icofont-arrow-up"></span></div>
+
+    <!--=======================Javascript============================-->
+
+    <!--=== Modernizr Min Js ===-->
+    <script src="assets/js/modernizr.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--=== jQuery Owl Carousel Min Js ===-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="assets/js/jquery-migrate.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== jquery Appear Js ===-->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!--=== jquery Swiper Min Js ===-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--=== jQuery Slick Min Js ===-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--=== jquery Fancybox Min Js ===-->
+    <script src="assets/js/fancybox.min.js"></script>
+    <!--=== jquery Aos Min Js ===-->
+    <script src="assets/js/aos.min.js"></script>
+    <!--=== jquery Slicknav Js ===-->
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <!--=== jquery Countdown Js ===-->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!--=== jquery Wow Min Js ===-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--=== jQuery Zoom Min Js ===-->
+    <script src="assets/js/jquery-zoom.min.js"></script>
+    <!--=== Custom Js ===-->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EITACIES</title>
+
+    <!--== Favicon ==-->
+    <link
+      rel="shortcut icon"
+      href="../assets/img/home/favicon.svg"
+      type="image/x-icon"
+    />
+    <!--== Google Fonts ==-->
+
+    <!--== Bootstrap CSS ==-->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--== Owl Carousel CSS ==-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Icofont Min Icons CSS ==-->
+    <link href="../assets/css/icofont.min.css" rel="stylesheet" />
+    <!--== Fontello CSS ==-->
+    <link href="../assets/css/fontello.css" rel="stylesheet" />
+    <!--== Vandella CSS ==-->
+    <link href="../assets/css/font-vandella.css" rel="stylesheet" />
+    <!--== Animate CSS ==-->
+    <link href="../assets/css/animate.css" rel="stylesheet" />
+    <!--== Aos CSS ==-->
+    <link href="../assets/css/aos.css" rel="stylesheet" />
+    <!--== FancyBox CSS ==-->
+    <link href="../assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <!--== Slicknav CSS ==-->
+    <link href="../assets/css/slicknav.css" rel="stylesheet" />
+    <!--== Swiper CSS ==-->
+    <link href="../assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+    <link href="../assets/css/style-new.css" rel="stylesheet" />
+    <link href="../assets/css/custom1.css" rel="stylesheet" />
+    <style>
+      /* The Modal (background) */
+      .pop {
+        position: sticky;
+      }
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%; /* Could be more or less, depending on screen size */
+      }
+
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .container-module {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        background: white;
+        border-radius: 20px;
+        height: 100px;
+      }
+      .container-module h5 {
+        font-size: 1rem;
+        margin: 0 !important;
+      }
+      @media only screen and (max-width: 600px) {
+        .gap {
+          padding: 20px 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--wrapper start-->
+    <div class="wrapper home-default-wrapper">
+      <!--== Start Header Wrapper ==-->
+      <header class="header-wrapper">
+        <div class="header-area header-default sticky-header">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-5 col-sm-3 col-md-3 col-lg-2">
+                <div class="header-logo-area">
+                  <a href="../index">
+                    <img
+                      class="logo-main"
+                      src="../assets/img/home/logo-white.svg"
+                      alt="Logo"
+                    />
+                    <img
+                      class="logo-light"
+                      src="../assets/img/home/logo-blue.svg"
+                      alt="Logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+                <div class="header-align">
+                  <div class="header-navigation-area">
+                    <ul class="main-menu nav justify-content-center">
+                      <li class="active"><a href="../index">Home</a></li>
+                      <li><a href="../about-us">About Us</a></li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavSer()"
+                          >Services <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavInd()"
+                          >Industries <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavCar()"
+                          >Careers <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li class="has-submenu full-width">
+                        <a href="https://eitacies.com/blog/">Blog</a>
+                      </li>
+                      <li class="has-submenu full-width">
+                        <a href="../contact-us">Contact Us</a>
+                      </li>
+                      <!--<li class="contact"><a href="contact"></a></li>-->
+                    </ul>
+                  </div>
+                </div>
+                <!-- Mobile Navigation-->
+                <div class="mobile-header-navigation-area">
+                  <span class="menu-icon">
+                    <div id="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <ul class="mm">
+                    <li class="active"><a href="../index">Home</a></li>
+                    <li><a href="../about-us">About Us</a></li>
+                    <li class="nav-dropdown">
+                      <a href="#!">Services</a>
+                      <ul>
+                        <li class="mc"></li>
+                        <li class="nav-dropdown">
+                          <a href="../services/consult">Consult</a>
+                          <ul>
+                            <li>
+                              <a
+                                href="../services/consult/prototyping-solutions"
+                                >Prototyping Solutions</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../services/engineer"
+                                >Engineering Services</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../services/consult/sustainability-support"
+                                >Sustainability Support</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../services/consult/accelerated-solutions"
+                                >Accelerated Solutions</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                          <a href="../services/engineer">Engineer</a>
+                          <ul>
+                            <li>
+                              <a
+                                href="../services/engineer/research-and-development"
+                                >Research & Development</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../services/engineer/cloud-transformation-and-security"
+                                >Cloud Transformation & Security</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../services/engineer/devsecops"
+                                >DevSecOps</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../services/engineer/machine-learning-artificial-intelligence"
+                                >Machine Learning & Artificial Intelligence</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../services/engineer/business-intelligence"
+                                >Business Intelligence</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../services/engineer/enterprise-integration"
+                                >Enterprise Integration</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                          <a href="../services/execute">Execute</a>
+                          <ul>
+                            <li>
+                              <a href="../services/execute/#managed-services"
+                                >Managed Services</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../services/execute/#staffing-solutions"
+                                >Staffing Solutions</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../services/execute/startup-enabler"
+                                >Startup Enabler</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                      <a href="../careers/">Careers</a>
+                      <ul>
+                        <li>
+                          <a href="../careers/#life-at-eitacies"
+                            >Life at EITACIES</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../careers/professionals">Open Positions</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                      <a href="../industries/">Industries</a>
+                      <ul>
+                        <li>
+                          <a href="../industries/retail-sector"
+                            >Retail Sector</a
+                          >
+                        </li>
+                        <li><a href="../industries/insurance">Insurance</a></li>
+                        <li>
+                          <a href="../industries/healthcare">Healthcare</a>
+                        </li>
+                        <li>
+                          <a href="../industries/manufacturing"
+                            >Manufacturing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../industries/energy-and-utilities"
+                            >Energy & Utilities</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../industries/telecommunications"
+                            >Telecommunications</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../industries/media-and-publishing"
+                            >Media & Publishing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../industries/transportation-and-logistics"
+                            >Transportation & Logistics</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../industries/banking-and-financial-services"
+                            >Banking & Financial Services</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="https://eitacies.com/blog/">Blog</a></li>
+                    <li><a href="../contact-us">Contact Us</a></li>
+                  </ul>
+                </div>
+                <!-- Mobile Navigation-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="service-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavSer()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="../services/consult">Consult</a></h4>
+                      </li>
+                      <li>
+                        <a href="../services/consult/prototyping-solutions"
+                          >Prototyping Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/engineer">Engineering Services</a>
+                      </li>
+                      <li>
+                        <a href="../services/consult/sustainability-support"
+                          >Sustainability Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/consult/accelerated-solutions"
+                          >Accelerated Solutions</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="../services/engineer">Engineer</a></h4>
+                      </li>
+                      <li>
+                        <a href="../services/engineer/research-and-development"
+                          >Research & Development</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../services/engineer/cloud-transformation-and-security"
+                          >Cloud Transformation & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/engineer/devsecops">DevSecOps</a>
+                      </li>
+                      <li>
+                        <a
+                          href="../services/engineer/machine-learning-artificial-intelligence"
+                          >Machine Learning & Artificial Intelligence</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/engineer/business-intelligence"
+                          >Business Intelligence</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/engineer/enterprise-integration"
+                          >Enterprise Integration</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="../services/execute">Execute</a></h4>
+                      </li>
+                      <li>
+                        <a href="../services/execute/#managed-services"
+                          >Managed Services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/execute/#staffing-solutions"
+                          >Staffing Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../services/execute/startup-enabler"
+                          >Startup Enabler</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="careers-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavCar()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4 style="border-bottom: 1px solid #3aaad0">
+                          <a
+                            href="../careers/"
+                            style="color: white; font-size: 25px"
+                            >Careers</a
+                          >
+                        </h4>
+                      </li>
+                      <li>
+                        <a href="../careers/#life-at-eitacies"
+                          >Life at EITACIES</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../careers/professionals">Open Positions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="industries-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavInd()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <ul style="margin-bottom: 0px">
+                  <li class="title">
+                    <h4 style="border-bottom: 1px solid #3aaad0">
+                      <a
+                        href="../industries/"
+                        style="color: white; font-size: 25px"
+                        >Industries</a
+                      >
+                    </h4>
+                  </li>
+                </ul>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="../industries/retail-sector">Retail Sector</a>
+                      </li>
+                      <li><a href="../industries/insurance">Insurance</a></li>
+                      <li><a href="../industries/healthcare">Healthcare</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="../industries/manufacturing">Manufacturing</a>
+                      </li>
+                      <li>
+                        <a href="../industries/energy-and-utilities"
+                          >Energy & Utilities</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../industries/telecommunications"
+                          >Telecommunications</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="../industries/media-and-publishing"
+                          >Media & Publishing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../industries/transportation-and-logistics"
+                          >Transportation & Logistics</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../industries/banking-and-financial-services"
+                          >Banking & Financial Services</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--== End Header Wrapper ==-->
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 class="gap" style="color: #16374f; text-align: center">
+            Drop Your Resume
+          </h1>
+          <form
+            action=".././career.php"
+            class="contact-form"
+            method="post"
+            role="form"
+            enctype="multipart/form-data"
+          >
+            <div class="row">
+              <div class="col-md-12 mt-1">
+                <label for="fname">* Upload your resume here</label><br /><input
+                  type="file"
+                  id="resume"
+                  name="resume"
+                  size="40"
+                  required
+                />
+              </div>
+              <div class="col-md-12 text-left mt-1">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <button
+                  class="contact grad-pattern"
+                  type="submit"
+                  name="submit"
+                  style="
+                    padding: 2px 25px !important;
+                    border-radius: 25px;
+                    font-size: 17px !important;
+                  "
+                >
+                  SEND
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <main class="main-content">
+        <!--== Start Hero Area Wrapper ==-->
+        <section
+          class="banner-services"
+          style="
+            background-image: url(../assets/img/banners-new/careers-graduate.jpg);
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="abt1">
+                  <h1>
+                    We fulfill your <br />desire of having <br />a great career!
+                  </h1>
+                  <br />
+                  <!--<a href="contact" class="service-btn mt-2">READ MORE</a>-->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!--<img src="../assets/services/engineer/enterprise-integration/images/Banner.jpg">-->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--== End Hero Area Wrapper ==-->
+
+        <section
+          class="product-area similar-product-area"
+          style="padding: 30px 0px"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div class="page-breadcrumb services position-static">
+                  <div class="container text-left">
+                    <ul class="breadcrumb justify-content-center">
+                      <li>
+                        <a href="../index"><i class="fa fa-home"></i></a>
+                      </li>
+                      <li><a href="../careers/">CAREERS</a></li>
+                      <li class="current">FOR GRADUATES</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-10 m-auto">
+                <div class="section-title text-center mb-3">
+                  <!--<h2 class="title-services">Integrate to Accelerate</h2>-->
+                  <h5 class="mt-4">
+                    Getting into an established and market-leading organization
+                    can shape the new graduates by helping them develop the
+                    skills that will benefit them in the present and future.
+                    EITACIES is the perfect organization for individuals that
+                    want to expose themselves to a thriving work environment
+                    whose core beliefs are to adapt, evolve, and grow - and who
+                    also believes in offering the same to its employees and
+                    customers.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="featured-area featured-default-area ash"
+          style="padding: 60px 0"
+        >
+          <div class="container">
+            <div class="row">
+              <h1 class="text-center">
+                Opportunities for freshers at EITACIES
+              </h1>
+              <div class="container">
+                <div class="row align-items-center mt-3">
+                  <div
+                    class="col-md-4 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>Free mentorship <br />programs</h5>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>Build a leadership <br />mindset</h5>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>Workshops</h5>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-3 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>Earn certifications</h5>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-3 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>Equal employment opportunity</h5>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-3 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>Retirement & health benefits</h5>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-3 mt-30"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="container-module">
+                      <img
+                        src="../assets/career/tick.jpg"
+                        style="float: left; padding-right: 10px; margin: 0px"
+                      />
+                      <h5>And lot more</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="product-area similar-product-area grad-pattern"
+          style="padding: 60px 0"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 m-auto">
+                <div class="section-title text-center mb-3">
+                  <div class="section-title text-center mb-3">
+                    <h1 class="text-center white" style="padding-bottom: 30px">
+                      Explore more Opportunities
+                    </h1>
+                    <a
+                      href="../careers/professionals"
+                      class="service-btn mt-2"
+                      style="border-radius: 10px"
+                      >CLICK HERE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featured-area featured-default-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-md-6 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div class="featured-thumb">
+                  <img
+                    src="../assets/career/e-verfied.png"
+                    alt="Olivine-Image"
+                  />
+                </div>
+              </div>
+              <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2>E-verified</h2>
+                <p style="color: #333333">
+                  EITACIES is an E-Verified company that provides a platform to
+                  build a better career, grow professionally, put your passion
+                  to work, enjoy the freedom to innovate and work with a diverse
+                  team.
+                </p>
+                <img
+                  src="../assets/career/verify.jpg"
+                  alt="Olivine-Image"
+                /><br /><br />
+                <a href="../../contact-us" class="contact1"
+                  >TALK TO OUR EXPERTS</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="product-area similar-product-area grad-pattern"
+          id="join-us"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 m-auto">
+                <div class="section-title text-center mb-3">
+                  <div class="section-title text-center mb-3">
+                    <h4
+                      class="white mt-60"
+                      style="line-height: 1.2; padding-bottom: 10px"
+                    >
+                      We are always seeking talents across different industries
+                      who share our vision. <br />Drop in your resumes and we'll
+                      get back to you!
+                    </h4>
+                    <a href="#!" class="contact1 mt-30" id="myBtn"
+                      >UPLOAD YOUR CV</a
+                    ><br /><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area pop">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto">
+                <div class="section-title text-center mb-3 mt-40">
+                  <!--<p style="margin-bottom:0px ;">OUR TEAM</p>-->
+                  <h2 class="title-services">Our Startup Collaborations</h2>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3 card-new">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="brand-logo-slider-container">
+                    <div
+                      class="owl-carousel owl-theme brand-logo-slider client-slid01 onav"
+                    >
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img src="../assets/career/w.jpg" alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img src="../assets/career/z.jpg" alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img src="../assets/career/m.jpg" alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img src="../assets/career/p.jpg" alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img src="../assets/career/pa.jpg" alt="Brand-Logo"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area hi">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto">
+                <div class="section-title text-center mb-3 mt-30">
+                  <h2 class="title-services">Technology Partners</h2>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3 card-new">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="brand-logo-slider-container">
+                    <div
+                      class="owl-carousel owl-theme brand-logo-slider client-slid01 onav"
+                    >
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/aws.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/microsoft-azure.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/google-cloud.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/ibm-cloud.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/oracle-cloud.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/private-cloud.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/workato.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto">
+                <div class="section-title text-center mb-3">
+                  <h2 class="title-services">Our Clients</h2>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3 card-new">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="brand-logo-slider-container">
+                    <div
+                      class="owl-carousel owl-theme brand-logo-slider client-slid01 onav"
+                    >
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/paloalto.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/citibank.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/kohls.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/fedility.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../assets/img/partners/new/shop-nbc.svg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area rev">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto">
+                <div class="section-title text-center">
+                  <img src="../assets/img/crown.jpg" />
+                  <p class="tit">HONEST REVIEWS</p>
+                  <h2 class="title">
+                    Amazing EITACIES Customers and<br />
+                    Users Testimonials
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="col-md-10 col-lg-10 m-auto">
+                <div class="owl-carousel owl-theme testimonial">
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >EITACIES has a great work culture that provides
+                            plenty of opportunities to learn and grow. People in
+                            the team are always welcoming and ready to help. The
+                            company respects the talent resources to the highest
+                            level and accommodates their requirements. The
+                            organization is one of the fastest growing in the
+                            industry and has a great future.</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Sri Sugun Paga Venkata</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >It has been a pleasure working with the EITACIES
+                            team. They provided a great opportunity to work on a
+                            live project, which helped me to clear my doubts and
+                            gave me enough confidence to work as a professional
+                            developer. Apart from helping me get placed at a
+                            good organization, they also provide constant and
+                            consistent support. I'd like to thank Team EITACIES
+                            and wish them the best of luck in their future
+                            endeavours.</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Ritu Jindal</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >Eitacies is a great place to work. They have
+                            provided many opportunities for my advancement and
+                            personal growth. I really enjoyed working with the
+                            people and the atmosphere is positive, promoting
+                            learning, and mutual respect. A very professional
+                            work environment and the organization's business
+                            process are well defined in all areas.
+                          </span>
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Sandhya D</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >I am a Python developer at Eitacies and they are
+                            one of the best organizations to work at. The
+                            organization is very employee-friendly and the team
+                            is very knowledgeable. They help coordinate
+                            day-to-day tasks. I am very happy to work in this
+                            positive environment and wish Eitacies management
+                            all the very best and great success ahead.
+                          </span>
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Purnima Sriram</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >I am very happy with my job. I'm learning many new
+                            things every day and making friends at work. It is
+                            an absolute pleasure to be a part of Eitacies. It is
+                            a very positive environment where I have been given
+                            the opportunity to learn and work on a wide range of
+                            projects. I had a very pleasant experience in the
+                            onboarding process and also on the project
+                            placements.</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Roshan Karki</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >I've been working at EITACIES for over ten years.
+                            It has proved to be a good experience for me. I have
+                            been able to develop myself both personally and
+                            professionally. The staff and recruiters are always
+                            ready to provide their support. The company also
+                            offers various pieces of training to all employees,
+                            which have been of great help in grooming and
+                            development.
+                          </span>
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Dhiren Guduru</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >I have been working with EITACEIS for a month. All
+                            team members are very supportive. They helped me a
+                            lot to understand the project and fulfil my tasks.
+                            Sai always encourages me to take on different
+                            responsibilities and Vamsi helps me a lot to
+                            understand the requirements of my daily tasks. I am
+                            very thankful to all my team members and their
+                            motivation and support.</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">Neelam Gandhi</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="product-area similar-product-area grad-pattern height-adjust story"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="section-title text-left mb-3 ml-3">
+                  <h2 class="title-services white">Stories</h2>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="gtco-testimonials">
+                    <div class="owl-carousel owl-carousel1 owl-theme">
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../assets/img/home/cloud-transformation.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2">
+                              <p>Manufacturing</p>
+                            </div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/enable-the-manufacturers-and-their-trading-partners-to-maximize-supply-chain-integration-and-efficiency/"
+                                >Enable the manufacturers and their trading
+                                partners to maximize supply chain integration
+                                and efficiency</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “Ampire, a US based ISV, develops software to
+                              enable the manufacturers and their trading
+                              partners to maximize supply chain integration and
+                              efficiency.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../assets/img/home/banking.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2">
+                              <p>Banking & Financial</p>
+                            </div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/banking-financial-services/"
+                                >Banking & Financial Services</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “Client is one of the world’s leading providers of
+                              investment, asset and fund management, and
+                              administration. EITACIES maximized their ROI with
+                              knowledge transfer of quality assurance best
+                              practices and methodology.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../assets/img/home/enterprise-application.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2"><p>Energy</p></div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/corporate-relocation-forces-wholesale-power-generation-company-to-seek-assistance-with-multiple-quality-assurance-initiativesclient-wholesale-power-generation-companyindustry-energyservice-offering/"
+                                >Corporate relocation forces wholesale power
+                                Generation Company to seek assistance with
+                                multiple quality assurance initiatives</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “EITACIES, a premier provider of technology
+                              staffing and services, responded through its QA &
+                              Testing Center of Excellence by developing an
+                              outsourced quality assurance solution.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../assets/img/home/integration.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2"><p>Integration</p></div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/b2b-solution-that-could-seamlessly-integrate-into-existing-systems/"
+                                >B2B solution that could seamlessly integrate
+                                into existing systems</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “Client is a leading provider of web‐based
+                              resources and information in the life science
+                              Industry, catering to businesses across the
+                              globe.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../assets/img/home/cloud.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2">
+                              <p>Cloud-Computing</p>
+                            </div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/top-5-questions-asked-by-cloudswitch-customers/"
+                                >Top 5 Questions Asked by CloudSwitch
+                                Customers</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “New CloudSwitch customers and prospects are
+                              coming up to speed every week and there are a
+                              number of questions that show up frequently enough
+                              that I thought it would be helpful to cover them
+                              in a blog.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="product-area similar-product-area no-padding margin-adjust"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 m-auto">
+                <div
+                  class="section-title text-center mb-3"
+                  style="padding-bottom: 20px"
+                >
+                  <h2 class="title fnewmedium">Ready to get started ?</h2>
+                  <br /><a href="../../contact-us"
+                    ><span class="contact fnewdemi" aria-label="CONTACT"
+                      >Submit</span
+                    ></a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer-area mt-2">
+        <div class="footer-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3" style="display: flex">
+                <div class="widget-item">
+                  <div class="widget-logo-area">
+                    <a href="index">
+                      <img src="../assets/img/home/logo-white.svg" alt="Logo" />
+                    </a>
+                  </div>
+                  <br />
+                  <h6 style="color: #61bcc6">Address</h6>
+                  <p
+                    class="white"
+                    style="font-weight: 400; font-size: 11px; line-height: 2"
+                  >
+                    Great America Technology Park, <br />4701 Patrick Henry
+                    Drive, Building 3, <br />Santa Clara, CA - 95054.
+                    <br />info@eitacies.com
+                  </p>
+                  <div class="footer-social-links">
+                    <a
+                      href="https://www.expertise.com/ca/santa-clara/software-development"
+                      target="_blank"
+                      ><img
+                        src="../assets/img/awards/expertise.svg"
+                        class="footer-ad-wid"
+                    /></a>
+                    <!--<img src="assets/img/awards/expertise.svg" class="footer-ad-wid">-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../services/consult" class="white">CONSULT</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../services/consult/prototyping-solutions"
+                        >Prototyping Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../services/engineer">Engineering Services</a>
+                    </li>
+                    <li>
+                      <a href="../services/consult/sustainability-support"
+                        >Sustainability Support</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../services/consult/accelerated-solutions"
+                        >Accelerated Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../services/engineer" class="white">ENGINEER</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../services/engineer/research-and-development"
+                        >Research & Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../services/engineer/cloud-transformation-and-security"
+                        >Cloud Transformation & Security
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../services/engineer/devsecops">DevSecOps</a>
+                    </li>
+                    <li>
+                      <a
+                        href="../services/engineer/machine-learning-artificial-intelligence"
+                        >Machine Learning & Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../services/engineer/business-intelligence"
+                        >Business Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../services/engineer/enterprise-integration"
+                        >Enterprise Integration</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../services/execute" class="white">EXECUTE</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../services/execute/#managed-services"
+                        >Managed Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../services/execute/#staffing-solutions"
+                        >Staffing Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../services/execute/startup-enabler"
+                        >Startup Enabler</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="widget-item">
+                  <h5><a href="../careers/" class="white">CAREERS</a></h5>
+                  <ul>
+                    <li>
+                      <a href="../careers/#life-at-eitacies"
+                        >Life at EITACIES</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../careers/professionals">Open Positions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="widget-item">
+                  <h5><a href="../industries/" class="white">INDUSTRIES</a></h5>
+                  <ul>
+                    <li>
+                      <a href="../industries/retail-sector">Retail Sector</a>
+                    </li>
+                    <li><a href="../industries/insurance">Insurance</a></li>
+                    <li><a href="../industries/healthcare">Healthcare</a></li>
+                    <li>
+                      <a href="../industries/manufacturing">Manufacturing</a>
+                    </li>
+                    <li>
+                      <a href="../industries/energy-and-utilities"
+                        >Energy & Utilities</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../industries/telecommunications"
+                        >Telecommunications</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../industries/media-and-publishing"
+                        >Media & Publishing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../industries/transportation-and-logistics"
+                        >Transportation & Logistics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../industries/banking-and-financial-services"
+                        >Banking & Financial Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="footer-bottom-content"></div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="widget-item">
+                    <p class="white">© 2023 EITACIES All Rights Reserved</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-social-links text-center">
+                  <a href="https://www.facebook.com/eitacies/" target="_blank"
+                    ><img
+                      src="../assets/img/home/facebook.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                  <a href="https://twitter.com/eitacies" target="_blank"
+                    ><img
+                      src="../assets/img/home/twitter.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                  <a
+                    href="https://www.linkedin.com/company/eitacies-inc/"
+                    target="_blank"
+                    ><img
+                      src="../assets/img/home/linkedin.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="widget-item">
+                    <p style="text-align: right">
+                      <a href="../terms-and-conditions">Terms & Conditions</a>
+                      |<a href="../privacy-policy"> Privacy Policy</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--== End Footer Area Wrapper ==-->
+
+      <!--== Scroll Top Button ==-->
+      <div class="scroll-to-top"><span class="icofont-arrow-up"></span></div>
+      <!--== Start Quick View Menu ==-->
+      <!--== End Side Menu ==-->
+    </div>
+
+    <!--=======================Javascript============================-->
+
+    <!--=== Modernizr Min Js ===-->
+    <script src="../assets/js/modernizr.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--=== jQuery Owl Carousel Min Js ===-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="../assets/js/jquery-migrate.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="../assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!--=== jquery Appear Js ===-->
+    <script src="../assets/js/jquery.appear.js"></script>
+    <!--=== jquery Swiper Min Js ===-->
+    <script src="../assets/js/swiper.min.js"></script>
+    <!--=== jQuery Slick Min Js ===-->
+    <script src="../assets/js/slick.min.js"></script>
+    <!--=== jquery Fancybox Min Js ===-->
+    <script src="../assets/js/fancybox.min.js"></script>
+    <!--=== jquery Aos Min Js ===-->
+    <script src="../assets/js/aos.min.js"></script>
+    <!--=== jquery Slicknav Js ===-->
+    <script src="../assets/js/jquery.slicknav.js"></script>
+    <!--=== jquery Countdown Js ===-->
+    <script src="../assets/js/jquery.countdown.min.js"></script>
+    <!--=== jquery Wow Min Js ===-->
+    <script src="../assets/js/wow.min.js"></script>
+    <!--=== jQuery Zoom Min Js ===-->
+    <script src="../assets/js/jquery-zoom.min.js"></script>
+    <!--=== Custom Js ===-->
+    <script src="../assets/js/custom.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+        $("body").css("overflow", "hidden");
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+        $("body").css("overflow", "auto");
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

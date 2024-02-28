@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EITACIES</title>
+
+    <!--== Favicon ==-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/home/favicon.svg"
+      type="image/x-icon"
+    />
+    <!--== Google Fonts ==-->
+
+    <!--== Bootstrap CSS ==-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--== Owl Carousel CSS ==-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- // -->
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Icofont Min Icons CSS ==-->
+    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <!--== Fontello CSS ==-->
+    <link href="assets/css/fontello.css" rel="stylesheet" />
+    <!--== Vandella CSS ==-->
+    <link href="assets/css/font-vandella.css" rel="stylesheet" />
+    <!--== Animate CSS ==-->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!--== Aos CSS ==-->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!--== FancyBox CSS ==-->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <!--== Slicknav CSS ==-->
+    <link href="assets/css/slicknav.css" rel="stylesheet" />
+    <!--== Swiper CSS ==-->
+    <link href="assets/css/swiper.min.css" rel="stylesheet" />
+    <!--== Main Style CSS ==-->
+    <link
+      href="assets/services/engineer/enterprise-integration/style.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/style-new.css" rel="stylesheet" />
+    <link href="assets/css/custom1.css" rel="stylesheet" />
+    <style>
+      .fa {
+        font-size: 15px;
+      }
+      .bend {
+        align-items: center;
+        width: 75%;
+        display: inline-flex;
+        border-radius: 50px 50px 0px 0px;
+      }
+      .gap {
+        padding: 20px 0px;
+      }
+      .gap1 {
+        padding: 20px 0px;
+        border-right: 1px solid #cdcdcd;
+      }
+      .btn-left {
+        left: 10px;
+      }
+      .btn-right {
+        left: 50px;
+      }
+      select.form-control {
+        -webkit-appearance: menulist;
+      }
+      .fa-spin.loader {
+        margin-right: 8px;
+      }
+      .success {
+        font-size: 16px;
+        font-weight: 700;
+        color: #228b22;
+        margin: 15px 0;
+      }
+      .contact-form .form-control {
+        height: 45px;
+      }
+      .contact-form textarea.form-control {
+        height: auto;
+      }
+      .error {
+        color: #ff0000;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .contact-form label {
+        width: 100%;
+        text-align: left;
+      }
+
+      #gimag {
+        padding-bottom: 20px !important;
+      }
+      @media screen and (min-width: 1000px) {
+        #gimag img {
+          padding-top: 60px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--wrapper start-->
+    <div class="wrapper home-default-wrapper">
+      <!--== Start Header Wrapper ==-->
+      <header class="header-wrapper">
+        <div class="header-area header-default sticky-header">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-5 col-sm-3 col-md-3 col-lg-2">
+                <div class="header-logo-area">
+                  <a href="index">
+                    <img
+                      class="logo-main"
+                      src="assets/img/home/logo-white.svg"
+                      alt="Logo"
+                    />
+                    <img
+                      class="logo-light"
+                      src="assets/img/home/logo-blue.svg"
+                      alt="Logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+                <div class="header-align">
+                  <div class="header-navigation-area">
+                    <ul class="main-menu nav justify-content-center">
+                      <li class="active"><a href="index">Home</a></li>
+                      <li><a href="about-us">About Us</a></li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavSer()"
+                          >Services <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavInd()"
+                          >Industries <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavCar()"
+                          >Careers <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li class="has-submenu full-width">
+                        <a href="https://eitacies.com/blog/">Blog</a>
+                      </li>
+                      <li class="has-submenu full-width">
+                        <a href="contact-us">Contact Us</a>
+                      </li>
+                      <!--<li class="contact"><a href="contact"></a></li>-->
+                    </ul>
+                  </div>
+                </div>
+                <!-- Mobile Navigation-->
+                <div class="mobile-header-navigation-area">
+                  <span class="menu-icon">
+                    <div id="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <ul class="mm">
+                    <li class="active"><a href="index">Home</a></li>
+                    <li><a href="about-us">About Us</a></li>
+                    <li class="nav-dropdown">
+                      <a href="#!">Services</a>
+                      <ul>
+                        <li class="mc"></li>
+                        <li class="nav-dropdown">
+                          <a href="services/consult">Consult</a>
+                          <ul>
+                            <li>
+                              <a href="services/consult/prototyping-solutions"
+                                >Prototyping Solutions</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/engineer"
+                                >Engineering Services</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/consult/sustainability-support"
+                                >Sustainability Support</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/consult/accelerated-solutions"
+                                >Accelerated Solutions</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                          <a href="services/engineer">Engineer</a>
+                          <ul>
+                            <li>
+                              <a
+                                href="services/engineer/research-and-development"
+                                >Research & Development</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="services/engineer/cloud-transformation-and-security"
+                                >Cloud Transformation & Security</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/engineer/devsecops"
+                                >DevSecOps</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="services/engineer/machine-learning-artificial-intelligence"
+                                >Machine Learning & Artificial Intelligence</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/engineer/business-intelligence"
+                                >Business Intelligence</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/engineer/enterprise-integration"
+                                >Enterprise Integration</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                          <a href="services/execute">Execute</a>
+                          <ul>
+                            <li>
+                              <a href="services/execute/#managed-services"
+                                >Managed Services</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/execute/#staffing-solutions"
+                                >Staffing Solutions</a
+                              >
+                            </li>
+                            <li>
+                              <a href="services/execute/startup-enabler"
+                                >Startup Enabler</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                      <a href="careers/">Careers</a>
+                      <ul>
+                        <li>
+                          <a href="careers/#life-at-eitacies"
+                            >Life at EITACIES</a
+                          >
+                        </li>
+                        <li>
+                          <a href="careers/professionals">Open Positions</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                      <a href="industries/">Industries</a>
+                      <ul>
+                        <li>
+                          <a href="industries/retail-sector">Retail Sector</a>
+                        </li>
+                        <li><a href="industries/insurance">Insurance</a></li>
+                        <li><a href="industries/healthcare">Healthcare</a></li>
+                        <li>
+                          <a href="industries/manufacturing">Manufacturing</a>
+                        </li>
+                        <li>
+                          <a href="industries/energy-and-utilities"
+                            >Energy & Utilities</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/telecommunications"
+                            >Telecommunications</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/media-and-publishing"
+                            >Media & Publishing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/transportation-and-logistics"
+                            >Transportation & Logistics</a
+                          >
+                        </li>
+                        <li>
+                          <a href="industries/banking-and-financial-services"
+                            >Banking & Financial Services</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="https://eitacies.com/blog/">Blog</a></li>
+                    <li><a href="contact-us">Contact Us</a></li>
+                  </ul>
+                </div>
+                <!-- Mobile Navigation-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="service-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavSer()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="services/consult">Consult</a></h4>
+                      </li>
+                      <li>
+                        <a href="services/consult/prototyping-solutions"
+                          >Prototyping Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/engineer">Engineering Services</a>
+                      </li>
+                      <li>
+                        <a href="services/consult/sustainability-support"
+                          >Sustainability Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/consult/accelerated-solutions"
+                          >Accelerated Solutions</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="services/engineer">Engineer</a></h4>
+                      </li>
+                      <li>
+                        <a href="services/engineer/research-and-development"
+                          >Research & Development</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="services/engineer/cloud-transformation-and-security"
+                          >Cloud Transformation & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/engineer/devsecops">DevSecOps</a>
+                      </li>
+                      <li>
+                        <a
+                          href="services/engineer/machine-learning-artificial-intelligence"
+                          >Machine Learning & Artificial Intelligence</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/engineer/business-intelligence"
+                          >Business Intelligence</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/engineer/enterprise-integration"
+                          >Enterprise Integration</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="services/execute">Execute</a></h4>
+                      </li>
+                      <li>
+                        <a href="services/execute/#managed-services"
+                          >Managed Services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/execute/#staffing-solutions"
+                          >Staffing Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services/execute/startup-enabler"
+                          >Startup Enabler</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="careers-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavCar()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4 style="border-bottom: 1px solid #3aaad0">
+                          <a
+                            href="careers/"
+                            style="color: white; font-size: 25px"
+                            >Careers</a
+                          >
+                        </h4>
+                      </li>
+                      <li>
+                        <a href="careers/#life-at-eitacies">Life at EITACIES</a>
+                      </li>
+                      <li>
+                        <a href="careers/professionals">Open Positions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="industries-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavInd()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <ul style="margin-bottom: 0px">
+                  <li class="title">
+                    <h4 style="border-bottom: 1px solid #3aaad0">
+                      <a
+                        href="industries/"
+                        style="color: white; font-size: 25px"
+                        >Industries</a
+                      >
+                    </h4>
+                  </li>
+                </ul>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="industries/retail-sector">Retail Sector</a>
+                      </li>
+                      <li><a href="industries/insurance">Insurance</a></li>
+                      <li><a href="industries/healthcare">Healthcare</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="industries/manufacturing">Manufacturing</a>
+                      </li>
+                      <li>
+                        <a href="industries/energy-and-utilities"
+                          >Energy & Utilities</a
+                        >
+                      </li>
+                      <li>
+                        <a href="industries/telecommunications"
+                          >Telecommunications</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="industries/media-and-publishing"
+                          >Media & Publishing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="industries/transportation-and-logistics"
+                          >Transportation & Logistics</a
+                        >
+                      </li>
+                      <li>
+                        <a href="industries/banking-and-financial-services"
+                          >Banking & Financial Services</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--== End Header Wrapper ==-->
+
+      <main class="main-content">
+        <!--== Start Hero Area Wrapper ==-->
+        <section
+          class="banner-services"
+          style="background-image: url(assets/img/banners-new/contact.jpg)"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="bg-pattern abt">
+                  <h1
+                    style="
+                      margin-bottom: 0px;
+                      line-height: 70px;
+                      font-size: 60px;
+                    "
+                  >
+                    Connect with <br />
+                    our Experts
+                  </h1>
+                  <!--<h3 class="white extrafnt2">Improve Security - Cloud Transformation & Security Solutions</h3>-->
+                  <!--<a href="contact.html" class="service-btn mt-2">READ MORE</a>-->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!--<img src="assets/services/devsecops/images/Banner.jpg">-->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--== End Hero Area Wrapper ==-->
+
+        <section class="product-area similar-product-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div class="page-breadcrumb services position-static">
+                  <div class="container text-left">
+                    <ul class="breadcrumb justify-content-center">
+                      <li>
+                        <a href="index.html"><i class="fa fa-home"></i></a>
+                      </li>
+                      <li class="current">CONTACT US</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center">
+            <h1 class="gap" style="color: #16374f">Corporate Office</h1>
+            <div class="row gap">
+              <div
+                class="col-md-6 gap1"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <h2 class="mt-4">
+                  Great America<br />
+                  Technology Park
+                </h2>
+                <h4 style="line-height: 1.5">
+                  4071 Patrick Henry Drive,<br />
+                  Building 25 Santa Clara, CA 95054
+                </h4>
+                <!--<h2><i class="fa fa-whatsapp" style="font-size:30px;"></i><a href="https://wa.me/18055004366" style="color:#333;"> +1(805)500-4366</a></h2>-->
+              </div>
+              <div
+                class="col-md-6 gap"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <h2 class="mt-4">Chicago Office</h2>
+                <h4 style="line-height: 1.5">
+                  1400 S. Wolf Road,<br />
+                  Building 100, Suite 100,<br />
+                  office#20, Wheeling, IL 60090
+                </h4>
+                <!--<h2><i class="fa fa-whatsapp" style="font-size:30px;"></i> <a href="https://wa.me/4165702516" style="color:#333;"> 416-570-2516</a></h2>-->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-area similar-product-area">
+          <div class="container text-center">
+            <div class="row grad-pattern bend">
+              <div
+                class="col-md-4 mail"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img src="assets/contact/1.png" style="float: left" />
+                <h2 style="font-size: 1.5rem; text-align: left">
+                  <a href="tel:+18055004366" class="white">+1(805)500-4366</a>
+                </h2>
+              </div>
+
+              <div
+                class="col-md-4 mail"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img src="assets/contact/2.png" style="float: left" />
+                <h2 style="font-size: 1.5rem; text-align: left">
+                  <a href="mailto:info@eitacies.com" class="white"
+                    >info@eitacies.com</a
+                  >
+                </h2>
+              </div>
+              <div
+                class="col-md-4 mail"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img src="assets/contact/3.png" style="float: left" />
+                <h2 style="font-size: 1.5rem; text-align: left">
+                  <a href="tel:8055007031" class="white">8055007031</a>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="container card-new">
+            <div class="row">
+              <div class="col-md-9 col-lg-9 m-auto">
+                <div class="section-title text-center mb-3">
+                  <!--<h2 class="title-services" style="margin-bottom: 34px !important;">Become Cloud-First Today</h2>-->
+                  <div class="row contact-box-message">
+                    <form
+                      action=""
+                      autocomplete="off"
+                      class="contact-form"
+                      method="post"
+                    >
+                      <div class="row">
+                        <div
+                          class="col-md-12 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="fname"
+                            >Select the Reason for Your Inquiry*</label
+                          ><br />
+                          <select
+                            name="reason"
+                            class="form-control"
+                            required=""
+                          >
+                            <option value="General Information Request">
+                              General Information Request
+                            </option>
+                            <option value="Staffing Solutions">
+                              Staffing Solutions
+                            </option>
+                            <option value="Managed Services">
+                              Managed Services
+                            </option>
+                            <option value="Startup Enabler">
+                              Startup Enabler
+                            </option>
+                            <option value="HR-Others">HR-Others</option>
+                            <option value="Partnerships">Partnerships</option>
+                            <option value="Careers">Careers</option>
+                          </select>
+                        </div>
+                        <div
+                          class="col-md-6 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="fname">First Name</label><br />
+                          <input
+                            name="fname"
+                            class="form-control"
+                            required=""
+                          />
+                        </div>
+                        <div
+                          class="col-md-6 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="lname">Last Name</label><br />
+                          <input
+                            name="lname"
+                            class="form-control"
+                            required=""
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="email">Email</label><br />
+                          <input
+                            name="email"
+                            class="form-control"
+                            required=""
+                            type="email"
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="phone">Phone</label><br />
+                          <input
+                            name="phone"
+                            class="form-control"
+                            required=""
+                          />
+                        </div>
+                        <div
+                          class="col-md-6 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="company">Company</label><br />
+                          <input
+                            name="company"
+                            class="form-control"
+                            required=""
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 text-left mb-20"
+                          style="text-align: left"
+                        >
+                          <label for="location">Location</label><br />
+                          <select
+                            name="location"
+                            class="form-control"
+                            required=""
+                          >
+                            <option value="United States">United States</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="APAC">APAC</option>
+                            <option value="Europe">Europe</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 text-left mb-20">
+                          <label for="message">Message</label><br />
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            placeholder="Your Message"
+                            required=""
+                          ></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <button
+                            class="contact grad-pattern form-submit"
+                            type="submit"
+                            name="submit"
+                            id="submit"
+                            style="
+                              padding: 5px 30px !important;
+                              border-radius: 15px;
+                              border: 0;
+                            "
+                          >
+                            <i
+                              class="fa fa-refresh fa-spin loader"
+                              style="display: none"
+                            ></i>
+                            SEND
+                          </button>
+                        </div>
+                        <div class="success"></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area">
+          <div class="container" style="padding: 0px 0px 50px 60px">
+            <div class="section-title text-center" style="margin-bottom: 0px">
+              <h2 class="title-services" style="padding-right: 60px">
+                Teams Accross the Globe
+              </h2>
+            </div>
+            <div class="owl-carousel owl-theme testimonial grtt">
+              <div class="item">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 col-md-4 col-sm-4" id="gimag">
+                    <img src="assets/contact/canada.png" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4" id="gimag">
+                    <img src="assets/contact/bangalore.png" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4" id="gimag">
+                    <img src="assets/contact/hyderabad.png" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4" id="gimag">
+                    <img src="assets/contact/poland.png" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4" id="gimag">
+                    <img src="assets/contact/australia.png" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4" id="gimag">
+                    <img src="assets/contact/singapore.png" />
+                  </div>
+                </div>
+              </div>
+              <!-- // -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-area mt-2">
+        <div class="footer-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3" style="display: flex">
+                <div class="widget-item">
+                  <div class="widget-logo-area">
+                    <a href="index">
+                      <img src="assets/img/home/logo-white.svg" alt="Logo" />
+                    </a>
+                  </div>
+                  <br />
+                  <h6 style="color: #61bcc6">Address</h6>
+                  <p
+                    class="white"
+                    style="font-weight: 400; font-size: 11px; line-height: 2"
+                  >
+                    Great America Technology Park, <br />4701 Patrick Henry
+                    Drive, Building 3, <br />Santa Clara, CA - 95054.
+                    <br />info@eitacies.com
+                  </p>
+                  <div class="footer-social-links">
+                    <a
+                      href="https://www.expertise.com/ca/santa-clara/software-development"
+                      target="_blank"
+                      ><img
+                        src="assets/img/awards/expertise.svg"
+                        class="footer-ad-wid"
+                    /></a>
+                    <!--<img src="assets/img/awards/expertise.svg" class="footer-ad-wid">-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5><a href="services/consult" class="white">CONSULT</a></h5>
+                  <ul>
+                    <li>
+                      <a href="services/consult/prototyping-solutions"
+                        >Prototyping Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services/engineer">Engineering Services</a>
+                    </li>
+                    <li>
+                      <a href="services/consult/sustainability-support"
+                        >Sustainability Support</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services/consult/accelerated-solutions"
+                        >Accelerated Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="services/engineer" class="white">ENGINEER</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="services/engineer/research-and-development"
+                        >Research & Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="services/engineer/cloud-transformation-and-security"
+                        >Cloud Transformation & Security
+                      </a>
+                    </li>
+                    <li><a href="services/engineer/devsecops">DevSecOps</a></li>
+                    <li>
+                      <a
+                        href="services/engineer/machine-learning-artificial-intelligence"
+                        >Machine Learning & Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services/engineer/business-intelligence"
+                        >Business Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services/engineer/enterprise-integration"
+                        >Enterprise Integration</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5><a href="services/execute" class="white">EXECUTE</a></h5>
+                  <ul>
+                    <li>
+                      <a href="services/execute/#managed-services"
+                        >Managed Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services/execute/#staffing-solutions"
+                        >Staffing Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services/execute/startup-enabler"
+                        >Startup Enabler</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="widget-item">
+                  <h5><a href="../careers/" class="white">CAREERS</a></h5>
+                  <ul>
+                    <li>
+                      <a href="../careers/#life-at-eitacies"
+                        >Life at EITACIES</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../careers/professionals">Open Positions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="widget-item">
+                  <h5><a href="industries/" class="white">INDUSTRIES</a></h5>
+                  <ul>
+                    <li>
+                      <a href="industries/retail-sector">Retail Sector</a>
+                    </li>
+                    <li><a href="industries/insurance">Insurance</a></li>
+                    <li><a href="industries/healthcare">Healthcare</a></li>
+                    <li>
+                      <a href="industries/manufacturing">Manufacturing</a>
+                    </li>
+                    <li>
+                      <a href="industries/energy-and-utilities"
+                        >Energy & Utilities</a
+                      >
+                    </li>
+                    <li>
+                      <a href="industries/telecommunications"
+                        >Telecommunications</a
+                      >
+                    </li>
+                    <li>
+                      <a href="industries/media-and-publishing"
+                        >Media & Publishing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="industries/transportation-and-logistics"
+                        >Transportation & Logistics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="industries/banking-and-financial-services"
+                        >Banking & Financial Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="footer-bottom-content"></div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="widget-item">
+                    <p class="white">© 2023 EITACIES All Rights Reserved</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-social-links text-center">
+                  <a href="https://www.facebook.com/eitacies/" target="_blank"
+                    ><img
+                      src="assets/img/home/facebook.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                  <a href="https://twitter.com/eitacies" target="_blank"
+                    ><img
+                      src="assets/img/home/twitter.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                  <a
+                    href="https://www.linkedin.com/company/eitacies-inc/"
+                    target="_blank"
+                    ><img
+                      src="assets/img/home/linkedin.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="widget-item">
+                    <p style="text-align: right">
+                      <a href="terms-and-conditions">Terms & Conditions</a> |<a
+                        href="privacy-policy"
+                      >
+                        Privacy Policy</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!--== Scroll Top Button ==-->
+      <div class="scroll-to-top"><span class="icofont-arrow-up"></span></div>
+    </div>
+    <!--=======================Javascript============================-->
+
+    <!--=== Modernizr Min Js ===-->
+    <script src="assets/js/modernizr.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--=== jQuery Owl Carousel Min Js ===-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="assets/js/jquery-migrate.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== jquery Appear Js ===-->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!--=== jquery Swiper Min Js ===-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--=== jQuery Slick Min Js ===-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--=== jquery Fancybox Min Js ===-->
+    <script src="assets/js/fancybox.min.js"></script>
+    <!--=== jquery Aos Min Js ===-->
+    <script src="assets/js/aos.min.js"></script>
+    <!--=== jquery Slicknav Js ===-->
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <!--=== jquery Countdown Js ===-->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!--=== jquery Wow Min Js ===-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--=== jQuery Zoom Min Js ===-->
+    <script src="assets/js/jquery-zoom.min.js"></script>
+    <!--=== Custom Js ===-->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script>
+      $(".contact-form").each(function () {
+        var $form = $(this);
+        $form.validate({
+          rules: {
+            reason: "required",
+            fname: "required",
+            lname: "required",
+            phone: {
+              required: true,
+              number: true,
+              maxlength: 10,
+              minlength: 10,
+            },
+            email: {
+              required: true,
+              email: true,
+            },
+            company: "required",
+            location: "required",
+            message: "required",
+          },
+          messages: {
+            reason: "Please select reason",
+            fname: "Enter your first name",
+            lname: "Enter your last name",
+            phone: "Enter valid mobile number",
+            email: "Enter a valid email",
+            company: "Enter a valid company",
+            location: "Please select location",
+            message: "Enter your message",
+          },
+          submitHandler: function (form) {
+            $form.find(".loader").css("display", "inline-block");
+            $form.find(".form-submit").prop("disabled", true);
+            $.post("contact-form.php", $form.serialize()).done(function (data) {
+              $form.trigger("reset");
+              $form.find(".success").html(data);
+              $form.find(".loader").css("display", "none");
+              setTimeout(function () {
+                $form.find(".success").hide();
+                $form.find(".form-submit").prop("disabled", false);
+              }, 4000);
+            });
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

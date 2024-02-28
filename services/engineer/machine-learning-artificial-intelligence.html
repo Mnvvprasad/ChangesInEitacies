@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EITACIES</title>
+
+    <!--== Favicon ==-->
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/home/favicon.svg"
+      type="image/x-icon"
+    />
+    <!--== Google Fonts ==-->
+
+    <!--== Bootstrap CSS ==-->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--== Owl Carousel CSS ==-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- // -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Icofont Min Icons CSS ==-->
+    <link href="../../assets/css/icofont.min.css" rel="stylesheet" />
+    <!--== Fontello CSS ==-->
+    <link href="../../assets/css/fontello.css" rel="stylesheet" />
+    <!--== Vandella CSS ==-->
+    <link href="../../assets/css/font-vandella.css" rel="stylesheet" />
+    <!--== Animate CSS ==-->
+    <link href="../../assets/css/animate.css" rel="stylesheet" />
+    <!--== Aos CSS ==-->
+    <link href="../../assets/css/aos.css" rel="stylesheet" />
+    <!--== FancyBox CSS ==-->
+    <link href="../../assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <!--== Slicknav CSS ==-->
+    <link href="../../assets/css/slicknav.css" rel="stylesheet" />
+    <!--== Swiper CSS ==-->
+    <link href="../../assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="../../assets/css/custom.css" rel="stylesheet" />
+    <!--== Main Style CSS ==-->
+    <link
+      href="../../assets/services/engineer/enterprise-integration/style.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .row1 > [class*="col-"] {
+        padding: 0px;
+      }
+      .row1 {
+        background-image: url(./assets/services/engineer/machine-learning-ai/images/row1.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+      }
+      @media only screen and (max-width: 600px) {
+        .row1 {
+          background-image: none;
+        }
+        .hid {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .ducrl {
+          height: 640px !important;
+        }
+      }
+      .grtt .owl-nav button.owl-prev {
+        width: 51px;
+        position: relative;
+        left: 0;
+        top: 140px;
+      }
+
+      .grtt .owl-nav button.owl-prev i:before {
+        color: #fff;
+      }
+
+      .grtt .owl-nav button.owl-next {
+        width: 51px;
+        position: relative;
+        right: 0;
+        top: 140px;
+      }
+
+      .grtt .owl-nav button.owl-next i:before {
+        color: #fff;
+      }
+
+      .owl-carousel.owl-theme.grtt .owl-nav [class*="owl-"] {
+        background-color: #1e7497;
+      }
+
+      .product-area.similar-product-area {
+        padding: 35px 0 35px;
+      }
+      .featured-area.featured-default-area {
+        padding: 40px 0 40px;
+      }
+
+      .less-mrgs {
+        margin: 50px auto !important;
+      }
+
+      .slider-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .slider {
+        display: flex;
+        flex: 0 0 1;
+        width: 300%; /* Depends On slide-box Length * 100 */
+        transition: all 0.5s linear;
+      }
+      .slide-box {
+        padding: 0 80px;
+        width: 300%;
+      }
+
+      .control-slider {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        line-height: 40px;
+        color: #333;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .btn-left {
+        left: 10px;
+      }
+      .btn-right {
+        left: 50px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .slide-box {
+          padding: 0 55px;
+        }
+
+        .card-test {
+          position: relative;
+          border: solid 1px #e2dede;
+          padding: 15px 15px 15px 25px;
+          margin-top: 0px;
+          background-color: #ffffff;
+          border-radius: 10px;
+          color: #fff;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: 0.3s;
+        }
+        .owl-nav {
+          display: block;
+        }
+        .justify-content-center {
+          justify-content: left !important;
+        }
+        .product-area.similar-product-area {
+          padding: 0px 0 35px;
+          font-size: 12px;
+        }
+        .container-module h4 {
+          font-size: 16px;
+        }
+      }
+      .contain-borders {
+        border: 2px solid #938989;
+        padding: 25px 25px 25px 35px;
+        margin: 0px 50px 0px 50px;
+        border-radius: 10px;
+      }
+      .icon {
+        vertical-align: middle;
+        font-size: 40px;
+        float: left;
+        position: absolute;
+        left: 10px;
+        top: 80px;
+      }
+      .icon1 {
+        vertical-align: middle;
+        font-size: 40px;
+        float: left;
+        position: absolute;
+        left: 10px;
+        top: 80px;
+      }
+      .gtco-testimonials .owl-dots {
+        display: none;
+      }
+      /* Style the buttons that are used to open and close the accordion panel */
+      .accordion {
+        background-color: #fff;
+        color: #333333 !important;
+        cursor: pointer;
+        padding: 15px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        border-radius: 10px;
+        font-size: 1.2rem;
+      }
+      .accordion:after {
+        content: "\002B";
+        color: #333333;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        padding-top: 2%;
+      }
+
+      h4.active:after {
+        content: "\2212";
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .accordion:hover {
+        background-color: #fff;
+      }
+
+      /* Style the accordion panel. Note: hidden by default */
+      .panel {
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        color: #000 !important;
+        border-radius: 10px;
+        text-align: left;
+        font-weight: bold;
+        padding: 20px;
+      }
+      .accordion img {
+        margin-top: 0px;
+        width: 8%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--wrapper start-->
+    <div class="wrapper home-default-wrapper">
+      <!--== Start Header Wrapper ==-->
+      <header class="header-wrapper">
+        <div class="header-area header-default sticky-header">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-5 col-sm-3 col-md-3 col-lg-2">
+                <div class="header-logo-area">
+                  <a href="../../index">
+                    <img
+                      class="logo-main"
+                      src="../../assets/img/home/logo-white.svg"
+                      alt="Logo"
+                    />
+                    <img
+                      class="logo-light"
+                      src="../../assets/img/home/logo-blue.svg"
+                      alt="Logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+                <div class="header-align">
+                  <div class="header-navigation-area">
+                    <ul class="main-menu nav justify-content-center">
+                      <li class="active"><a href="../../index">Home</a></li>
+                      <li><a href="../../about-us">About Us</a></li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavSer()"
+                          >Services <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavInd()"
+                          >Industries <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="JavaScript:void(0);" onclick="openNavCar()"
+                          >Careers <i class="fa fa-angle-down"></i
+                        ></a>
+                      </li>
+                      <li class="has-submenu full-width">
+                        <a href="https://eitacies.com/blog/">Blog</a>
+                      </li>
+                      <li class="has-submenu full-width">
+                        <a href="../../contact-us">Contact Us</a>
+                      </li>
+                      <!--<li class="contact"><a href="contact"></a></li>-->
+                    </ul>
+                  </div>
+                </div>
+                <!-- Mobile Navigation-->
+                <div class="mobile-header-navigation-area">
+                  <span class="menu-icon">
+                    <div id="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <ul class="mm">
+                    <li class="active"><a href="../../index">Home</a></li>
+                    <li><a href="../../about-us">About Us</a></li>
+                    <li class="nav-dropdown">
+                      <a href="#!">Services</a>
+                      <ul>
+                        <li class="mc"></li>
+                        <li class="nav-dropdown">
+                          <a href="../../services/consult">Consult</a>
+                          <ul>
+                            <li>
+                              <a
+                                href="../../services/consult/prototyping-solutions"
+                                >Prototyping Solutions</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../../services/engineer"
+                                >Engineering Services</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/consult/sustainability-support"
+                                >Sustainability Support</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/consult/accelerated-solutions"
+                                >Accelerated Solutions</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                          <a href="../../services/engineer">Engineer</a>
+                          <ul>
+                            <li>
+                              <a
+                                href="../../services/engineer/research-and-development"
+                                >Research & Development</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/engineer/cloud-transformation-and-security"
+                                >Cloud Transformation & Security</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../../services/engineer/devsecops"
+                                >DevSecOps</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/engineer/machine-learning-artificial-intelligence"
+                                >Machine Learning & Artificial Intelligence</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/engineer/business-intelligence"
+                                >Business Intelligence</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/engineer/enterprise-integration"
+                                >Enterprise Integration</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-dropdown">
+                          <a href="../../services/execute">Execute</a>
+                          <ul>
+                            <li>
+                              <a href="../../services/execute/#managed-services"
+                                >Managed Services</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="../../services/execute/#staffing-solutions"
+                                >Staffing Solutions</a
+                              >
+                            </li>
+                            <li>
+                              <a href="../../services/execute/startup-enabler"
+                                >Startup Enabler</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                      <a href="../../careers/">Careers</a>
+                      <ul>
+                        <li>
+                          <a href="../../careers/#life-at-eitacies"
+                            >Life at EITACIES</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../../careers/professionals"
+                            >Open Positions</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                      <a href="../../industries/">Industries</a>
+                      <ul>
+                        <li>
+                          <a href="../../industries/retail-sector"
+                            >Retail Sector</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../../industries/insurance">Insurance</a>
+                        </li>
+                        <li>
+                          <a href="../../industries/healthcare">Healthcare</a>
+                        </li>
+                        <li>
+                          <a href="../../industries/manufacturing"
+                            >Manufacturing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../../industries/energy-and-utilities"
+                            >Energy & Utilities</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../../industries/telecommunications"
+                            >Telecommunications</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../../industries/media-and-publishing"
+                            >Media & Publishing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../../industries/transportation-and-logistics"
+                            >Transportation & Logistics</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../../industries/banking-and-financial-services"
+                            >Banking & Financial Services</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="https://eitacies.com/blog/">Blog</a></li>
+                    <li><a href="../../contact-us">Contact Us</a></li>
+                  </ul>
+                </div>
+                <!-- Mobile Navigation-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="service-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavSer()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="../../services/consult">Consult</a></h4>
+                      </li>
+                      <li>
+                        <a href="../../services/consult/prototyping-solutions"
+                          >Prototyping Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/engineer"
+                          >Engineering Services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/consult/sustainability-support"
+                          >Sustainability Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/consult/accelerated-solutions"
+                          >Accelerated Solutions</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="../../services/engineer">Engineer</a></h4>
+                      </li>
+                      <li>
+                        <a
+                          href="../../services/engineer/research-and-development"
+                          >Research & Development</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../services/engineer/cloud-transformation-and-security"
+                          >Cloud Transformation & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/engineer/devsecops"
+                          >DevSecOps</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../services/engineer/machine-learning-artificial-intelligence"
+                          >Machine Learning & Artificial Intelligence</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/engineer/business-intelligence"
+                          >Business Intelligence</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/engineer/enterprise-integration"
+                          >Enterprise Integration</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4><a href="../../services/execute">Execute</a></h4>
+                      </li>
+                      <li>
+                        <a href="../../services/execute/#managed-services"
+                          >Managed Services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/execute/#staffing-solutions"
+                          >Staffing Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../services/execute/startup-enabler"
+                          >Startup Enabler</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="careers-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavCar()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="title">
+                        <h4 style="border-bottom: 1px solid #3aaad0">
+                          <a
+                            href="../../careers/"
+                            style="color: white; font-size: 25px"
+                            >Careers</a
+                          >
+                        </h4>
+                      </li>
+                      <li>
+                        <a href="../../careers/#life-at-eitacies"
+                          >Life at EITACIES</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../careers/professionals">Open Positions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="industries-menu" class="menu-overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavInd()"
+            >&times;</a
+          >
+          <div class="menu-overlay-content">
+            <div class="container">
+              <div class="row">
+                <ul style="margin-bottom: 0px">
+                  <li class="title">
+                    <h4 style="border-bottom: 1px solid #3aaad0">
+                      <a
+                        href="../../industries/"
+                        style="color: white; font-size: 25px"
+                        >Industries</a
+                      >
+                    </h4>
+                  </li>
+                </ul>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="../../industries/retail-sector"
+                          >Retail Sector</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../industries/insurance">Insurance</a>
+                      </li>
+                      <li>
+                        <a href="../../industries/healthcare">Healthcare</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="../../industries/manufacturing"
+                          >Manufacturing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../industries/energy-and-utilities"
+                          >Energy & Utilities</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../industries/telecommunications"
+                          >Telecommunications</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li>
+                        <a href="../../industries/media-and-publishing"
+                          >Media & Publishing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../industries/transportation-and-logistics"
+                          >Transportation & Logistics</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../industries/banking-and-financial-services"
+                          >Banking & Financial Services</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--== End Header Wrapper ==-->
+
+      <main class="main-content">
+        <!--== Start Hero Area Wrapper ==-->
+        <section
+          class="banner-services"
+          style="background-image: url(../../assets/img/banners-new/ml-ai.jpg)"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="bg-pattern">
+                  <h1
+                    style="
+                      margin-bottom: 0px;
+                      font-size: 50px;
+                      line-height: 60px;
+                    "
+                  >
+                    Machine Learning and
+                  </h1>
+                  <h1
+                    style="
+                      margin-bottom: 0px;
+                      line-height: 60px;
+                      font-size: 50px;
+                    "
+                  >
+                    Artificial Intelligence
+                  </h1>
+                  <h1
+                    style="
+                      margin-bottom: 0px;
+                      line-height: 60px;
+                      font-size: 50px;
+                    "
+                  >
+                    Services
+                  </h1>
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </section>
+
+        <!--== End Hero Area Wrapper ==-->
+
+        <section class="product-area similar-product-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12">
+                <div class="page-breadcrumb services position-static">
+                  <div class="container text-left">
+                    <ul class="breadcrumb justify-content-center">
+                      <li>
+                        <a href="../../index"><i class="fa fa-home"></i></a>
+                      </li>
+                      <li><a href="#">SERVICES</a></li>
+                      <li><a href="../engineer">ENGINEER</a></li>
+                      <li class="current">
+                        MACHINE LEARNING & ARTIFICIAL INTELLIGENCE
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-8 m-auto">
+                <div class="section-title text-center mb-3">
+                  <h2 class="title-services">
+                    Automate. Accelerate. Accommodate
+                  </h2>
+                  <h5 class="mt-4">
+                    Experience the next-gen technology with EITACIES. We
+                    leverage our AI and ML capabilities in equipping
+                    organizations to embrace the digital evolution of tomorrow.
+                    We bring to you advanced solutions that reshape your
+                    business to be future-ready. Choose our exemplary suite of
+                    advisory services to promote growth and gain actionable
+                    insights.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area ash">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-8 m-auto">
+                <div class="section-title">
+                  <!--<span class="section-title h5">More than 50% of Start-Ups Prefer to<br/>Empower their Systems through DevSecOps!</span>-->
+                  <h1 class="title mt-30">Exude Excellence</h1>
+                  <h1 class="title bttop">through Machine Learning</h1>
+                  <a
+                    href="../../contact-us"
+                    class="contact1 mt-30"
+                    aria-label="TALK TO OUR EXPERTS"
+                    >TALK TO OUR EXPERTS</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4 m-auto text-center">
+                <a href="#"
+                  ><img
+                    src="../../assets/services/engineer/machine-learning-ai/images/exude-excellence-through-machine-learning.png"
+                    class="latestUpdatesimg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-area featured-default-area no-padding">
+          <div class="">
+            <div class="row align-items-center reverse">
+              <div
+                class="col-md-6"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/revamp-with-ai-ml.png"
+                  alt="Olivine-Image"
+                />
+              </div>
+              <div
+                class="col-md-6"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                style="
+                  margin-left: -15px;
+                  padding-left: 65px;
+                  padding-top: 20px;
+                  padding-bottom: 40px;
+                "
+              >
+                <h2 style="font-size: 1.9rem; line-height: 1.4">
+                  Revamp with AI + ML
+                </h2>
+                <p class="mt-30">
+                  Artificial Intelligence and Machine Learning focus on the
+                  optimization of your business models through the
+                  implementation of complex algorithms. We are experts in
+                  creating end-to-end ML solutions. From project scoping to the
+                  deployment of solutions, we utilize customized services in
+                  revamping your enterprise processes. We excel at building data
+                  pipelines, establishing data lifecycles, and monitoring the
+                  operating production systems continuously. At EITACIES, we
+                  leverage AI in creating unique ML solutions that reduce your
+                  operation complexities.
+                </p>
+                <a href="#rewamp-with-ai-ml" class="contact1">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="featured-area featured-default-area ash grad-pattern mt-30"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-md-12 text-center mt-30"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <h2 class="title-services white mb-4">Our Service Range</h2>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <div class="container-module cm">
+                    <!--<img src="/assets/services/devsecops/images/sm1.png"/>-->
+                    <h4 class="accordion">
+                      <img
+                        src="../../assets/services/engineer/machine-learning-ai/images/1.png"
+                      />
+                      Predictive Analytics
+                    </h4>
+                    <div class="panel">
+                      <p>
+                        Get real-time insights and predict the future with
+                        predictive analytics. We intensively analyze your
+                        existing data and build models that modernize your
+                        applications. Furthermore, we train such data models to
+                        learn, adapt, and refine your processes, thereby gaining
+                        rapid ROI.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="container-module cm">
+                    <!--<img src="/assets/services/devsecops/images/sm3.png"/>-->
+                    <h4 class="accordion">
+                      <img
+                        src="../../assets/services/engineer/machine-learning-ai/images/3.png"
+                      />
+                      Deep Learning
+                    </h4>
+                    <div class="panel">
+                      <p>
+                        Transcend your workflows with our Deep Learning
+                        offering. We design complex neural networks that
+                        accelerate your productivity and optimize your business
+                        models. We train your systems to perform exemplarily and
+                        overcome challenges significantly.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="container-module cm">
+                    <!--<img src="/assets/services/devsecops/images/sm4.png"/>-->
+                    <h4 class="accordion">
+                      <img
+                        src="../../assets/services/engineer/machine-learning-ai/images/5.png"
+                      />
+                      ML Ops
+                    </h4>
+                    <div class="panel">
+                      <p>
+                        We transform your ML lifecycle by adding a boost of
+                        agility and speed through our ML Ops. From building the
+                        ML model to deploying the model and monitoring its
+                        performance, we go above and beyond in ensuring process
+                        optimization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <div class="container-module cm">
+                    <!--<img src="/assets/services/devsecops/images/sm2.png"/>-->
+                    <h4 class="accordion">
+                      <img
+                        src="../../assets/services/engineer/machine-learning-ai/images/2.png"
+                      />
+                      Machine Learning
+                    </h4>
+                    <div class="panel">
+                      <p>
+                        Enhance your operational intelligence and drive results
+                        with the help of Machine Learning. We possess extensive
+                        experience in building, training, validating,
+                        optimizing, deploying, and testing ML models that fit
+                        your industry spectrum. We render performance-oriented
+                        solutions based on supervised, unsupervised, and
+                        semi-supervised learning that improves accuracy and
+                        yields profitably.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="container-module cm">
+                    <!--<img src="/assets/services/devsecops/images/sm4.png"/>-->
+                    <h4 class="accordion">
+                      <img
+                        src="../../assets/services/engineer/machine-learning-ai/images/4.png"
+                      />
+                      NLP
+                    </h4>
+                    <div class="panel">
+                      <p>
+                        We offer NLP services that infuse self-learning and
+                        contextual nuances to make your systems smarter and more
+                        efficient. Our team helps in modernizing your business
+                        applications by fortifying them with conversational
+                        intelligence.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="container-module cm">
+                    <!--<img src="/assets/services/devsecops/images/sm4.png"/>-->
+                    <h4 class="accordion">
+                      <img
+                        src="../../assets/services/engineer/machine-learning-ai/images/6.png"
+                      />
+                      Data Engineering
+                    </h4>
+                    <div class="panel">
+                      <p>
+                        We recognize the importance of managing data and
+                        building systems for data collection, storage, and
+                        analysis. Our data engineers excel at separating and
+                        categorizing raw data by leveraging advanced
+                        technologies. With EITACIES, you can wield the power of
+                        data in your enterprise to further your organizational
+                        goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="product-area similar-product-area ash"
+          id="rewamp-with-ai-ml"
+        >
+          <div class="container">
+            <div
+              class="col-md-12 text-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h2 style="font-size: 1.9rem; line-height: 1.4; padding: 30px 0">
+                Revamp with AI + ML
+              </h2>
+            </div>
+            <div class="row align-items-center mt-30 row1">
+              <div
+                class="col-md-1 text-center mb-3 hid"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              ></div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/11.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  ML proof of concept, <br />ML library assessment
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/22.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  Solution <br />architecture
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/33.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  ML tools & <br />hosting assessment
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/44.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  Model <br />re-engineering
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/55.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  Solution Design & <br />Implementation
+                </h2>
+              </div>
+              <div
+                class="col-md-1 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              ></div>
+            </div>
+            <div class="row align-items-center mt-30 row1">
+              <div
+                class="col-md-1 text-center mb-3 hid"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              ></div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/11.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  Algorithm porting <br />& deployment
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/22.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  ML data annotation <br />for training & validation
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/33.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  Model as <br />a service
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/44.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  ML Lifecycle <br />Management
+                </h2>
+              </div>
+              <div
+                class="col-md-2 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/55.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 14px; line-height: 1.5" class="mt-30">
+                  Performance <br />Monitoring
+                </h2>
+              </div>
+              <div
+                class="col-md-1 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section class="featured-area featured-default-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-md-4 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                style="padding: 0 100px"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/improved-profitability.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 1.2rem; line-height: 1.5" class="mt-30">
+                  Improved<br />Profitability
+                </h2>
+              </div>
+              <div
+                class="col-md-4 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                style="padding: 0 100px"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/enhanced-cx.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 1.2rem; line-height: 1.5" class="mt-30">
+                  Enhanced <br />CX
+                </h2>
+              </div>
+              <div
+                class="col-md-4 text-center mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                style="padding: 0 100px"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/better-adoption-of-technologies.png"
+                  alt="Olivine-Image"
+                />
+                <h2 style="font-size: 1.2rem; line-height: 1.5" class="mt-30">
+                  Better Adoption <br />of Technologies
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-area featured-default-area no-padding">
+          <div class="">
+            <div class="row align-items-center">
+              <div
+                class="col-md-6"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                style="
+                  margin-left: -15px;
+                  padding-left: 65px;
+                  padding-top: 20px;
+                  padding-bottom: 40px;
+                "
+              >
+                <h2 class="title-services mb-2 mt-30">The Growth We Created</h2>
+                <ul class="dott" style="padding: 30px 0 0 30px">
+                  <li>
+                    Our team improved the technological abilities of a renowned
+                    firm; we automated their survey generation process, thereby
+                    reducing 50% of their survey processing time and eliminating
+                    33% of manual interference.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-md-6 no-padding"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../assets/services/engineer/machine-learning-ai/images/the-growth-we-mpacted.png"
+                  alt="Olivine-Image"
+                  style="width: 100%; border-radius: 10px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto">
+                <div class="section-title text-center mb-3">
+                  <h2 class="title-services mt-30">Strategic Partners</h2>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3 card-new">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="brand-logo-slider-container">
+                    <div
+                      class="owl-carousel owl-theme brand-logo-slider client-slid01"
+                    >
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/matson.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/servicesource.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/wellsfargo.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/wholefoods.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/xpologistics.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/lexisnexis.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/allstate.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/amdocs.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/actelion.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="item brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="../../assets/icon/autodesk.jpg"
+                            alt="Brand-Logo"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area rev">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto">
+                <div class="section-title text-center">
+                  <img src="../../assets/img/crown.jpg" />
+                  <p class="tit">HONEST REVIEWS</p>
+                  <h2 class="title">
+                    Amazing EITACIES Customers and<br />
+                    Users Testimonials
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="col-md-10 col-lg-10 m-auto">
+                <div class="owl-carousel owl-theme testimonial">
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >It has been our greatest pleasure to have
+                            collaborated with the team at Eitacies. They possess
+                            extensive knowledge and are reliable in offering
+                            feasible solutions. We had the unwavering support of
+                            team Eitacies, which helped us to scale rapidly and
+                            establish ourselves in this niche industry.
+                          </span>
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">
+                          Daniel Wu, Product Manager at a Leading Cloud Security
+                          Enterprise
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >It feels like yesterday since we met team Eitacies
+                            for tech support. Right from our first meeting, the
+                            team has been cooperative, understanding, and always
+                            helpful. As an organization focusing on AI and ML
+                            capabilities, we're thankful for Eitacies for paving
+                            our tech pathway to success!</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">
+                          Nadia Ryland, Founder of an AI-based Mobile App
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >Exemplary - that's how I'd describe Eitacies'
+                            contribution and dedication. They're just a team of
+                            perfectionists, who leave no stones unturned when it
+                            comes to offering solutions. I had the pleasure of
+                            working with their offshore team, who managed our
+                            project and rendered the deliverables well before
+                            the stated time frame! If you are new to the tech
+                            space, go ahead and chat with the team, they'll
+                            figure out everything on your behalf!</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">
+                          Javier Perez, Business Development Executive at a
+                          Fortune 500 Company
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="item">
+                    <div class="testimonial-std-height">
+                      <div class="card-test">
+                        <p class="post">
+                          <span class="post-txt"
+                            >Thank you, team, for your attention to detail and
+                            for solving complex problems. We're happy to be
+                            associated with such a vibrant and agile
+                            organization.</span
+                          >
+                          <span
+                            ><img
+                              class="nice-img"
+                              src="../../assets/img/home/hand.svg"
+                          /></span>
+                        </p>
+                      </div>
+                      <div class="arrow-down"></div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="">
+                          <img
+                            class="profile-pic fit-image"
+                            src="../../assets/img/home/user.svg"
+                          />
+                        </div>
+                        <p class="profile-name">
+                          Alma Aseigo, CEO of a budding Financial Advisory
+                          Organization
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="product-area similar-product-area grad-pattern height-adjust story"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="section-title text-left mb-3 ml-3">
+                  <h2 class="title-services white">Stories</h2>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <div class="gtco-testimonials">
+                    <div class="owl-carousel owl-carousel1 owl-theme">
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../../assets/img/home/cloud-transformation.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2">
+                              <p>Manufacturing</p>
+                            </div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/enable-the-manufacturers-and-their-trading-partners-to-maximize-supply-chain-integration-and-efficiency/"
+                                >Enable the manufacturers and their trading
+                                partners to maximize supply chain integration
+                                and efficiency</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “Ampire, a US based ISV, develops software to
+                              enable the manufacturers and their trading
+                              partners to maximize supply chain integration and
+                              efficiency.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../../assets/img/home/banking.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2">
+                              <p>Banking & Financial</p>
+                            </div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/banking-financial-services/"
+                                >Banking & Financial Services</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “Client is one of the world’s leading providers of
+                              investment, asset and fund management, and
+                              administration. EITACIES maximized their ROI with
+                              knowledge transfer of quality assurance best
+                              practices and methodology.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../../assets/img/home/enterprise-application.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2"><p>Energy</p></div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/corporate-relocation-forces-wholesale-power-generation-company-to-seek-assistance-with-multiple-quality-assurance-initiativesclient-wholesale-power-generation-companyindustry-energyservice-offering/"
+                                >Corporate relocation forces wholesale power
+                                Generation Company to seek assistance with
+                                multiple quality assurance initiatives</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “EITACIES, a premier provider of technology
+                              staffing and services, responded through its QA &
+                              Testing Center of Excellence by developing an
+                              outsourced quality assurance solution.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../../assets/img/home/integration.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2"><p>Integration</p></div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/b2b-solution-that-could-seamlessly-integrate-into-existing-systems/"
+                                >B2B solution that could seamlessly integrate
+                                into existing systems</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “Client is a leading provider of web‐based
+                              resources and information in the life science
+                              Industry, catering to businesses across the
+                              globe.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="card text-center">
+                          <img
+                            class="card-img-top"
+                            src="../../assets/img/home/cloud.svg"
+                            alt=""
+                          />
+                          <div class="card-body">
+                            <div class="sm-title mb-2">
+                              <p>Cloud-Computing</p>
+                            </div>
+                            <h5>
+                              <a
+                                href="https://eitacies.com/blog/top-5-questions-asked-by-cloudswitch-customers/"
+                                >Top 5 Questions Asked by CloudSwitch
+                                Customers</a
+                              >
+                            </h5>
+                            <p class="card-text">
+                              “New CloudSwitch customers and prospects are
+                              coming up to speed every week and there are a
+                              number of questions that show up frequently enough
+                              that I thought it would be helpful to cover them
+                              in a blog.”
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-area similar-product-area margin-adjust">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-9 m-auto">
+                <div class="section-title text-center mb-3">
+                  <h2
+                    class="title-services"
+                    style="margin-bottom: 34px !important"
+                  >
+                    Unleash Your Capabilities with Our Smart Solutions
+                  </h2>
+                  <div class="row contact-box-message">
+                    <form
+                      action="../../services.php"
+                      autocomplete="off"
+                      class="contact-form"
+                      method="post"
+                    >
+                      <div class="row">
+                        <div
+                          class="col-md-6 text-left"
+                          style="text-align: left"
+                        >
+                          <label for="fname">First Name*</label><br /><input
+                            type="text"
+                            name="fname"
+                            required=""
+                          />
+                        </div>
+                        <div
+                          class="col-md-6 text-left"
+                          style="text-align: left"
+                        >
+                          <label for="fname">Last Name*</label><br /><input
+                            type="text"
+                            name="lname"
+                            required=""
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 text-left mt-1"
+                          style="text-align: left"
+                        >
+                          <label for="fname">Email*</label><br /><input
+                            type="email"
+                            name="email"
+                            required=""
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 text-left mt-1"
+                          style="text-align: left"
+                        >
+                          <label for="fname">Company Name</label><br /><input
+                            type="text"
+                            name="company"
+                            required=""
+                          />
+                        </div>
+                        <div
+                          class="col-md-6 text-left mt-1"
+                          style="text-align: left"
+                        >
+                          <label for="fname">Phone</label><br /><input
+                            type="text"
+                            name="phone"
+                            required=""
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 text-left mt-1"
+                          style="text-align: left"
+                        >
+                          <label for="fname">How Did you hear about us?*</label
+                          ><br /><select name="ref" required="">
+                            <option value="Through a friend">
+                              Through a friend
+                            </option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Search Engine">Search Engine</option>
+                            <option value="Careers website">
+                              Careers website
+                            </option>
+                            <option value="Other">Other</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 text-left mt-1">
+                          <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            required=""
+                          ></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <button
+                            class="btn btn-primary eventbtn light contact mt-30 fnewdemi"
+                            type="submit"
+                            name="submit"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-area mt-2">
+        <div class="footer-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3" style="display: flex">
+                <div class="widget-item">
+                  <div class="widget-logo-area">
+                    <a href="../../index">
+                      <img
+                        src="../../assets/img/home/logo-white.svg"
+                        alt="Logo"
+                      />
+                    </a>
+                  </div>
+                  <br />
+                  <h6 style="color: #61bcc6">Address</h6>
+                  <p
+                    class="white"
+                    style="font-weight: 400; font-size: 11px; line-height: 2"
+                  >
+                    Great America Technology Park, <br />4701 Patrick Henry
+                    Drive, Building 13, <br />Santa Clara, CA - 95054.
+                    <br />info@eitacies.com
+                  </p>
+                  <div class="footer-social-links">
+                    <a
+                      href="https://www.expertise.com/ca/santa-clara/software-development"
+                      target="_blank"
+                      ><img
+                        src="../../assets/img/awards/expertise.svg"
+                        class="footer-ad-wid"
+                    /></a>
+                    <!--<img src="assets/img/awards/expertise.svg" class="footer-ad-wid">-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../../services/consult" class="white">CONSULT</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../../services/consult/prototyping-solutions"
+                        >Prototyping Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/engineer">Engineering Services</a>
+                    </li>
+                    <li>
+                      <a href="../../services/consult/sustainability-support"
+                        >Sustainability Support</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/consult/accelerated-solutions"
+                        >Accelerated Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../../services/engineer" class="white">ENGINEER</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../../services/engineer/research-and-development"
+                        >Research & Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../services/engineer/cloud-transformation-and-security"
+                        >Cloud Transformation & Security
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../../services/engineer/devsecops">DevSecOps</a>
+                    </li>
+                    <li>
+                      <a
+                        href="../../services/engineer/machine-learning-artificial-intelligence"
+                        >Machine Learning & Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/engineer/business-intelligence"
+                        >Business Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/engineer/enterprise-integration"
+                        >Enterprise Integration</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../../services/execute" class="white">EXECUTE</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../../services/execute/#managed-services"
+                        >Managed Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/execute/#staffing-solutions"
+                        >Staffing Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/execute/startup-enabler"
+                        >Startup Enabler</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="widget-item">
+                  <h5><a href="../../careers/" class="white">CAREERS</a></h5>
+                  <ul>
+                    <li>
+                      <a href="../../careers/#life-at-eitacies"
+                        >Life at EITACIES</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../careers/professionals">Open Positions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="widget-item">
+                  <h5>
+                    <a href="../../industries/" class="white">INDUSTRIES</a>
+                  </h5>
+                  <ul>
+                    <li>
+                      <a href="../../industries/retail-sector">Retail Sector</a>
+                    </li>
+                    <li><a href="../../industries/insurance">Insurance</a></li>
+                    <li>
+                      <a href="../../industries/healthcare">Healthcare</a>
+                    </li>
+                    <li>
+                      <a href="../../industries/manufacturing">Manufacturing</a>
+                    </li>
+                    <li>
+                      <a href="../../industries/energy-and-utilities"
+                        >Energy & Utilities</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../industries/telecommunications"
+                        >Telecommunications</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../industries/media-and-publishing"
+                        >Media & Publishing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../industries/transportation-and-logistics"
+                        >Transportation & Logistics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../industries/banking-and-financial-services"
+                        >Banking & Financial Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="footer-bottom-content"></div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="widget-item">
+                    <p class="white">© 2023 EITACIES All Rights Reserved</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-social-links text-center">
+                  <a href="https://www.facebook.com/eitacies/" target="_blank"
+                    ><img
+                      src="../../assets/img/home/facebook.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                  <a href="https://twitter.com/eitacies" target="_blank"
+                    ><img
+                      src="../../assets/img/home/twitter.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                  <a
+                    href="https://www.linkedin.com/company/eitacies-inc/"
+                    target="_blank"
+                    ><img
+                      src="../../assets/img/home/linkedin.svg"
+                      class="footer-sm-wid"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="widget-item">
+                    <p style="text-align: right">
+                      <a href="../../terms-and-conditions"
+                        >Terms & Conditions</a
+                      >
+                      |<a href="../../privacy-policy"> Privacy Policy</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--== End Footer Area Wrapper ==-->
+    </div>
+
+    <!--=======================Javascript============================-->
+
+    <!--=== Modernizr Min Js ===-->
+    <script src="../../assets/js/modernizr.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <!--=== jQuery Owl Carousel Min Js ===-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="../../assets/js/jquery-migrate.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="../../assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <!--=== jquery Appear Js ===-->
+    <script src="../../assets/js/jquery.appear.js"></script>
+    <!--=== jquery Swiper Min Js ===-->
+    <script src="../../assets/js/swiper.min.js"></script>
+    <!--=== jQuery Slick Min Js ===-->
+    <script src="../../assets/js/slick.min.js"></script>
+    <!--=== jquery Fancybox Min Js ===-->
+    <script src="../../assets/js/fancybox.min.js"></script>
+    <!--=== jquery Aos Min Js ===-->
+    <script src="../../assets/js/aos.min.js"></script>
+    <!--=== jquery Slicknav Js ===-->
+    <script src="../../assets/js/jquery.slicknav.js"></script>
+    <!--=== jquery Countdown Js ===-->
+    <script src="../../assets/js/jquery.countdown.min.js"></script>
+    <!--=== jquery Wow Min Js ===-->
+    <script src="../../assets/js/wow.min.js"></script>
+    <!--=== jQuery Zoom Min Js ===-->
+    <script src="../../assets/js/jquery-zoom.min.js"></script>
+    <!--=== Custom Js ===-->
+    <script src="../../assets/js/custom.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
