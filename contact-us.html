@@ -669,7 +669,7 @@
                   <!--<h2 class="title-services" style="margin-bottom: 34px !important;">Become Cloud-First Today</h2>-->
                   <div class="row contact-box-message">
                     <form
-                      action=""
+                      action="contact-form.php"
                       autocomplete="off"
                       class="contact-form"
                       method="post"
@@ -683,6 +683,7 @@
                             >Select the Reason for Your Inquiry*</label
                           ><br />
                           <select
+                            id="reason"
                             name="reason"
                             class="form-control"
                             required=""
@@ -710,6 +711,7 @@
                         >
                           <label for="fname">First Name</label><br />
                           <input
+                            id="fname"
                             name="fname"
                             class="form-control"
                             required=""
@@ -721,6 +723,7 @@
                         >
                           <label for="lname">Last Name</label><br />
                           <input
+                            id="lname"
                             name="lname"
                             class="form-control"
                             required=""
@@ -733,6 +736,7 @@
                         >
                           <label for="email">Email</label><br />
                           <input
+                            id="email"
                             name="email"
                             class="form-control"
                             required=""
@@ -746,6 +750,7 @@
                         >
                           <label for="phone">Phone</label><br />
                           <input
+                            id="phone"
                             type="number"
                             name="phone"
                             class="form-control"
@@ -758,6 +763,7 @@
                         >
                           <label for="company">Company</label><br />
                           <input
+                            id="company"
                             type="text"
                             name="company"
                             class="form-control"
@@ -771,6 +777,7 @@
                         >
                           <label for="location">Location</label><br />
                           <select
+                            id="location"
                             name="location"
                             class="form-control"
                             required=""
@@ -785,6 +792,7 @@
                         <div class="col-md-12 text-left mb-20">
                           <label for="message">Message</label><br />
                           <textarea
+                            id="message"
                             name="message"
                             class="form-control"
                             placeholder="Your Message"
