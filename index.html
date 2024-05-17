@@ -48,6 +48,15 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
     <link href="assets/css/style-new.css" rel="stylesheet" />
     <link href="assets/css/custom1.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/prasad.css" />
+
+     <!-- Prasad menu-bar modification -->
+    <style>
+      .menu-overlay {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -79,30 +88,36 @@
                   <div class="header-align">
                     <div class="header-navigation-area">
                       <ul class="main-menu nav justify-content-center">
-                        <li class="active"><a href="index">Home</a></li>
-                        <li><a href="about-us">About Us</a></li>
-                        <li>
-                          <a href="JavaScript:void(0);" onclick="openNavSer()"
+                        <li class="active nav-item">
+                          <a href="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="about-us">About Us</a>
+                        </li>
+                        <!-- Prasad, here added onmouseover and onmouseout methods for menu-bar modification [understandable]-->
+                        <li class="nav-item">
+                          <a href="JavaScript:void(0);" onclick="openNavSer()"  onmouseover="openNav('service-menu')" onmouseout="closeNav('service-menu')"
                             >Services <i class="fa fa-angle-down"></i
                           ></a>
                         </li>
-                        <li>
-                          <a href="JavaScript:void(0);" onclick="openNavInd()"
+                        <li class="nav-item">
+                          <a href="JavaScript:void(0);" onclick="openNavInd()" onmouseenter="openNav('industries-menu')" onmouseout="closeNav('industries-menu')"
                             >Industries <i class="fa fa-angle-down"></i
                           ></a>
                         </li>
-                        <li>
-                          <a href="JavaScript:void(0);" onclick="openNavCar()"
+                        <li class="nav-item">
+                          <a href="JavaScript:void(0);" onclick="openNavCar()" onmouseenter="openNav('careers-menu')" onmouseout="closeNav('careers-menu')"
                             >Careers <i class="fa fa-angle-down"></i
                           ></a>
                         </li>
-                        <li class="has-submenu full-width">
+                        <li class="has-submenu full-width nav-item">
                           <a href="https://eitacies.com/blog/">Blog</a>
                         </li>
-                        <li class="has-submenu full-width">
+                        <li class="has-submenu full-width nav-item">
                           <a href="contact-us">Contact Us</a>
                         </li>
                         <!--<li class="contact"><a href="contact"></a></li>-->
+                        <div class="animation start-home"></div>
                       </ul>
                     </div>
                   </div>
@@ -120,7 +135,7 @@
                       <li><a href="about-us">About Us</a></li>
                       <li class="nav-dropdown">
                         <a href="#!">Services</a>
-                        <ul>
+                        <ul class="sub-menu">
                           <li class="mc"></li>
                           <li class="nav-dropdown">
                             <a href="services/consult">Consult</a>
@@ -272,7 +287,9 @@
               </div>
             </div>
           </div>
-          <div id="service-menu" class="menu-overlay">
+
+          <!-- Prasad modifications for menu-overlay -->
+          <div id="service-menu" class="menu-overlay"  onmouseover="cancelClose()" onmouseout="closeNav('service-menu')">
             <a
               href="javascript:void(0)"
               class="closebtn"
@@ -376,7 +393,7 @@
               </div>
             </div>
           </div>
-          <div id="careers-menu" class="menu-overlay">
+          <div id="careers-menu" class="menu-overlay" onmouseenter="cancelClose()" onmouseout="closeNav('careers-menu')">
             <a
               href="javascript:void(0)"
               class="closebtn"
@@ -413,7 +430,7 @@
               </div>
             </div>
           </div>
-          <div id="industries-menu" class="menu-overlay">
+          <div id="industries-menu" class="menu-overlay" onmouseenter="cancelClose()" onmouseout="closeNav('industries-menu')">
             <a
               href="javascript:void(0)"
               class="closebtn"
@@ -1608,8 +1625,10 @@
                   </li>
                 </ul>
               </div>
+              <br>
               <div class="widget-item">
                 <h5><a href="../careers/" class="white">CAREERS</a></h5>
+                <br />
                 <ul>
                   <li>
                     <a href="../careers/#life-at-eitacies">Life at EITACIES</a>
@@ -1622,6 +1641,7 @@
             <div class="col-lg-3">
               <div class="widget-item">
                 <h5><a href="industries/" class="white">INDUSTRIES</a></h5>
+                <br />
                 <ul>
                   <li><a href="industries/retail-sector">Retail Sector</a></li>
                   <li><a href="industries/insurance">Insurance</a></li>
@@ -1740,5 +1760,36 @@
     <script src="assets/js/jquery-zoom.min.js"></script>
     <!--=== Custom Js ===-->
     <script src="assets/js/custom.js"></script>
+    <!-- Prasad menu-bar modification -->
+    <script>
+      var timer;
+  
+      function openNav(id) {
+          // Hide all submenus initially
+          var menus = document.getElementsByClassName("menu-overlay");
+          for (var i = 0; i < menus.length; i++) {
+              menus[i].style.display = "none";
+          }
+          
+          // Display the submenu with the given id
+          document.getElementById(id).style.display = "block";
+      }
+  
+      function closeNav(id) {
+          // Delay closing the submenu to allow time for mouse to enter it
+          timer = setTimeout(function() {
+              // Hide the submenu with the given id
+              document.getElementById(id).style.display = "none";
+          }, 5000); // Adjust the delay as needed
+      }
+  
+      function cancelClose() { 
+          // Cancel the scheduled closing of the submenu
+          clearTimeout(timer);
+      }
+  
+  
+  
+      </script>
   </body>
 </html>

@@ -1,0 +1,153 @@
+.main-menu .nav-item a {
+  text-decoration: none;
+  
+}
+
+.main-menu .nav-item a:hover {
+  text-decoration: underline; 
+  width: auto;
+  height:100%;
+  border-radius: 8px;
+}
+
+
+.menu-overlay-content .title h4 a:hover {
+  font-size: 19px; 
+}
+
+.title-sub-heading :hover {
+  color: black;
+}
+/* 
+.title-sub-heading:hover .fa-long-arrow-right {
+  color: black;
+} */
+
+/* .nav{    
+    position: relative;
+    width: auto;
+    height: 50px;
+    background:transparent;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 2px 2px 2px 2px rgba(18, 95, 203, 0.737);
+    padding-left: 25px;
+    padding-right: 15px;
+} */
+
+.nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    margin: right -2px;
+    margin-left: -20px;
+
+
+}
+
+
+
+.nav .sub-menu a:hover {
+    text-decoration: underline;
+
+  }
+
+  .sub-menu-list .sub-menu-list-Heading a {
+  
+    color: #111111;
+  }
+
+  .sub-menu-list .sub-menu-list-Heading a :hover {
+    font-size: 39px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+
+
+.sub-menu-list .sub-menu-list-title a {
+  
+  color: #424242;
+}
+
+  .sub-menu-list .sub-menu-list-title a:hover {
+    text-decoration: underline;
+    color: rgb(45, 168, 217);
+    font-weight: 900;
+    font-size: 17px;
+    display: inline-block;
+  }
+
+  .sub-menu-list:hover {
+    background-color: transparent;
+  }
+
+.menu-overlay {
+    display: none;
+  }
+  
+
+  .nav-item a:hover #service-menu {
+    background-color: gray;
+}
+
+
+#service-menu.hovered {
+    background-color:#FFFFFF;
+}
+
+#industries-menu.hovered{
+    background-color: #FFFFFF;
+}
+
+#careers-menu.hovered{
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.main-menu li {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+/* 23-04-2024 */
+
+
+
