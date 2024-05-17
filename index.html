@@ -12,51 +12,67 @@
       rel="shortcut icon"
       href="assets/img/home/favicon.svg"
       type="image/x-icon"
+      rel="preload"
+      as="image"
     />
     <!--== Google Fonts ==-->
     <!--== Owl Carousel CSS ==-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="preload"
+      as="style"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="preload"
+      as="style"
     />
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <link href="assets/css/style-new.css" rel="stylesheet" />
-    <link href="assets/css/custom1.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" rel="preload"
+    as="style" />
+    <link href="assets/css/style-new.css" rel="stylesheet" rel="preload"
+    as="style" />
+    <link href="assets/css/custom1.css" rel="stylesheet" rel="preload"
+    as="style" />
     <!--== Bootstrap CSS ==-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"  rel="preload"
+    as="style"/>
     <!--<link href="https://db.onlinewebfonts.com/c/1418d3fa9fc8dc8a9449cb4e79a55223?family=Futura+New+Demi" rel="stylesheet" type="text/css"/> 
   <link href="https://db.onlinewebfonts.com/c/0b1605ff292071a70f9acf66f689afd3?family=Futura+New+Medium" rel="stylesheet" type="text/css"/> 
   <link href="https://db.onlinewebfonts.com/c/478e653b5b1afb91b0d06091ed542563?family=Futura+New+Book" rel="stylesheet" type="text/css"/>-->
     <!--== Icofont Min Icons CSS ==-->
-    <link href="assets/css/icofont.min.css" rel="stylesheet" />
+    <link href="assets/css/icofont.min.css" rel="stylesheet" rel="preload"
+    as="style" />
     <!--== Font-awesome Icons CSS ==-->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" rel="preload"
+    as="style" />
     <!--== Aos CSS ==-->
-    <link href="assets/css/aos.css" rel="stylesheet" />
+    <link href="assets/css/aos.css" rel="stylesheet" rel="preload"
+    as="style" />
     <!--== FancyBox CSS ==-->
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" rel="preload"
+    as="style" />
     <!--== Slicknav CSS ==-->
-    <link href="assets/css/slicknav.css" rel="stylesheet" />
+    <link href="assets/css/slicknav.css" rel="stylesheet" rel="preload"
+    as="style"/>
     <!--== Swiper CSS ==-->
-    <link href="assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="assets/css/swiper.min.css" rel="stylesheet" rel="preload"
+    as="style" />
 
     <!--== Main Style CSS ==-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <link href="assets/css/style-new.css" rel="stylesheet" />
-    <link href="assets/css/custom1.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" rel="preload"
+    as="style" />
+    <link href="assets/css/style-new.css" rel="stylesheet" rel="preload"
+    as="style" />
+    <link href="assets/css/custom1.css" rel="stylesheet" rel="preload"
+    as="style" />
 
-    <link rel="stylesheet" href="assets/css/prasad.css" />
+    <link rel="stylesheet" href="assets/css/fresh-menubar.css" rel="preload"
+    as="style" />
 
-     <!-- Prasad menu-bar modification -->
-    <style>
-      .menu-overlay {
-        display: none;
-      }
-    </style>
+    <!-- Prasad menu-bar modification -->
+    
   </head>
 
   <body>
@@ -91,33 +107,44 @@
                         <li class="active nav-item">
                           <a href="index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="about-us-menu-parent">
                           <a href="about-us">About Us</a>
                         </li>
                         <!-- Prasad, here added onmouseover and onmouseout methods for menu-bar modification [understandable]-->
-                        <li class="nav-item">
-                          <a href="JavaScript:void(0);" onclick="openNavSer()"  onmouseover="openNav('service-menu')" onmouseout="closeNav('service-menu')"
+                        <li class="nav-item" id="service-menu-parent">
+                          <a
+                            href="JavaScript:void(0);"
+                            onclick="openNavSer()"
+                            onmouseover="openNav('service-menu')"
+                            onmouseout="closeNav('service-menu')"
                             >Services <i class="fa fa-angle-down"></i
                           ></a>
                         </li>
-                        <li class="nav-item">
-                          <a href="JavaScript:void(0);" onclick="openNavInd()" onmouseenter="openNav('industries-menu')" onmouseout="closeNav('industries-menu')"
+                        <li class="nav-item" id="industries-menu-parent">
+                          <a
+                            href="JavaScript:void(0);"
+                            onclick="openNavInd()"
+                            onmouseenter="openNav('industries-menu')"
+                            onmouseout="closeNav('industries-menu')"
                             >Industries <i class="fa fa-angle-down"></i
                           ></a>
                         </li>
-                        <li class="nav-item">
-                          <a href="JavaScript:void(0);" onclick="openNavCar()" onmouseenter="openNav('careers-menu')" onmouseout="closeNav('careers-menu')"
+                        <li class="nav-item" id="careers-menu-parent">
+                          <a
+                            href="JavaScript:void(0);"
+                            onclick="openNavCar()"
+                            onmouseenter="openNav('careers-menu')"
+                            onmouseout="closeNav('careers-menu')"
                             >Careers <i class="fa fa-angle-down"></i
                           ></a>
                         </li>
-                        <li class="has-submenu full-width nav-item">
+                        <li class="has-submenu full-width nav-item" id="blog-menu-parent">
                           <a href="https://eitacies.com/blog/">Blog</a>
                         </li>
                         <li class="has-submenu full-width nav-item">
                           <a href="contact-us">Contact Us</a>
                         </li>
                         <!--<li class="contact"><a href="contact"></a></li>-->
-                        <div class="animation start-home"></div>
                       </ul>
                     </div>
                   </div>
@@ -289,36 +316,35 @@
           </div>
 
           <!-- Prasad modifications for menu-overlay -->
-          <div id="service-menu" class="menu-overlay"  onmouseover="cancelClose()" onmouseout="closeNav('service-menu')">
-            <a
-              href="javascript:void(0)"
-              class="closebtn"
-              onclick="closeNavSer()"
-              >&times;</a
-            >
+          <div
+            id="service-menu"
+            class="menu-overlay"
+            onmouseover="cancelClose()"
+            onmouseout="closeNav('service-menu')"
+          >
             <div class="menu-overlay-content">
               <div class="container">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="sub-menu-list">
                       <ul>
-                        <li class="title">
+                        <li class="title sub-menu-list-Heading">
                           <h4><a href="services/consult">Consult</a></h4>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/consult/prototyping-solutions"
                             >Prototyping Solutions</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/engineer">Engineering Services</a>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/consult/sustainability-support"
                             >Sustainability Support</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/consult/accelerated-solutions"
                             >Accelerated Solutions</a
                           >
@@ -329,35 +355,35 @@
                   <div class="col-md-4">
                     <div class="sub-menu-list">
                       <ul>
-                        <li class="title">
+                        <li class="title sub-menu-list-Heading">
                           <h4><a href="services/engineer">Engineer</a></h4>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/engineer/research-and-development"
                             >Research & Development</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a
                             href="services/engineer/cloud-transformation-and-security"
                             >Cloud Transformation & Security</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/engineer/devsecops">DevSecOps</a>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a
                             href="services/engineer/machine-learning-artificial-intelligence"
                             >Machine Learning & Artificial Intelligence</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/engineer/business-intelligence"
                             >Business Intelligence</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/engineer/enterprise-integration"
                             >Enterprise Integration</a
                           >
@@ -368,20 +394,20 @@
                   <div class="col-md-4">
                     <div class="sub-menu-list">
                       <ul>
-                        <li class="title">
+                        <li class="title sub-menu-list-Heading">
                           <h4><a href="services/execute">Execute</a></h4>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/execute/#managed-services"
                             >Managed Services</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/execute/#staffing-solutions"
                             >Staffing Solutions</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="services/execute/startup-enabler"
                             >Startup Enabler</a
                           >
@@ -393,13 +419,12 @@
               </div>
             </div>
           </div>
-          <div id="careers-menu" class="menu-overlay" onmouseenter="cancelClose()" onmouseout="closeNav('careers-menu')">
-            <a
-              href="javascript:void(0)"
-              class="closebtn"
-              onclick="closeNavCar()"
-              >&times;</a
-            >
+          <div
+            id="careers-menu"
+            class="menu-overlay"
+            onmouseenter="cancelClose()"
+            onmouseout="closeNav('careers-menu')"
+          >
             <div class="menu-overlay-content">
               <div class="container">
                 <div class="row">
@@ -407,20 +432,28 @@
                     <div class="sub-menu-list">
                       <ul>
                         <li class="title">
-                          <h4 style="border-bottom: 1px solid #3aaad0">
-                            <a
+                          <h4 style="border-bottom: 1px solid #111111">
+                            <div class="d-flex flex-row">
+                              <a
                               href="careers/"
-                              style="color: white; font-size: 25px"
+                              style="color: black; font-size: 28px"
                               >Careers</a
                             >
+                            <div class="d-flex flex-row title-sub-heading">
+                              <a  style="color:rgb(45, 168, 217);font-size: 16px; margin-left: 10px; margin-top: 10px;" href="careers/">Explore exciting opportunities to join our team</a>
+                              <a style="color:rgb(45, 168, 217);font-size: 16px; margin-left: 10px; margin-top: 12px;line-height: 16px;" href="careers/"><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                              </a>
+                            </div>
+    
+                            </div>
                           </h4>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="careers/#life-at-eitacies"
                             >Life at EITACIES</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="careers/professionals">Open Positions</a>
                         </li>
                       </ul>
@@ -430,50 +463,63 @@
               </div>
             </div>
           </div>
-          <div id="industries-menu" class="menu-overlay" onmouseenter="cancelClose()" onmouseout="closeNav('industries-menu')">
-            <a
-              href="javascript:void(0)"
-              class="closebtn"
-              onclick="closeNavInd()"
-              >&times;</a
-            >
+          <div
+            id="industries-menu"
+            class="menu-overlay"
+            onmouseenter="cancelClose()"
+            onmouseout="closeNav('industries-menu')"
+          >
             <div class="menu-overlay-content">
               <div class="container">
                 <div class="row">
                   <ul style="margin-bottom: 0px">
                     <li class="title">
-                      <h4 style="border-bottom: 1px solid #3aaad0">
-                        <a
+                      <h4 style="border-bottom: 1px solid #111111">
+                        <div class="d-flex flex-row">
+                          <a
                           href="industries/"
-                          style="color: white; font-size: 25px"
+                          style="color: black; font-size: 28px"
                           >Industries</a
                         >
+                        <div class="d-flex flex-row title-sub-heading">
+                          <a  style="color:rgb(45, 168, 217);font-size: 16px; margin-left: 10px; margin-top: 10px;" href="industries/">Software solutions across industries</a>
+                          <a style="color:rgb(45, 168, 217);font-size: 16px; margin-left: 10px; margin-top: 12px;line-height: 16px;" href="industries/"><span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                          </a>
+                        </div>
+
+                        </div>
+                        
                       </h4>
                     </li>
                   </ul>
+
                   <div class="col-md-4">
                     <div class="sub-menu-list">
                       <ul>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/retail-sector">Retail Sector</a>
                         </li>
-                        <li><a href="industries/insurance">Insurance</a></li>
-                        <li><a href="industries/healthcare">Healthcare</a></li>
+                        <li class="sub-menu-list-title">
+                          <a href="industries/insurance">Insurance</a>
+                        </li>
+                        <li class="sub-menu-list-title">
+                          <a href="industries/healthcare">Healthcare</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="sub-menu-list">
                       <ul>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/manufacturing">Manufacturing</a>
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/energy-and-utilities"
                             >Energy & Utilities</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/telecommunications"
                             >Telecommunications</a
                           >
@@ -484,17 +530,17 @@
                   <div class="col-md-4">
                     <div class="sub-menu-list">
                       <ul>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/media-and-publishing"
                             >Media & Publishing</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/transportation-and-logistics"
                             >Transportation & Logistics</a
                           >
                         </li>
-                        <li>
+                        <li class="sub-menu-list-title">
                           <a href="industries/banking-and-financial-services"
                             >Banking & Financial Services</a
                           >
@@ -1625,7 +1671,7 @@
                   </li>
                 </ul>
               </div>
-              <br>
+              <br />
               <div class="widget-item">
                 <h5><a href="../careers/" class="white">CAREERS</a></h5>
                 <br />
@@ -1729,67 +1775,38 @@
     <!--=======================Javascript============================-->
 
     <!--=== Modernizr Min Js ===-->
-    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/modernizr.js" defer></script>
     <!--=== jQuery Min Js ===-->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js" defer></script>
     <!--=== jQuery Owl Carousel Min Js ===-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
     <!--=== jQuery Migration Min Js ===-->
-    <script src="assets/js/jquery-migrate.js"></script>
+    <script src="assets/js/jquery-migrate.js" defer></script>
     <!--=== Popper Min Js ===-->
-    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/popper.min.js" defer></script>
     <!--=== Bootstrap Min Js ===-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
     <!--=== jquery Appear Js ===-->
-    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.appear.js" defer></script>
     <!--=== jquery Swiper Min Js ===-->
-    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/swiper.min.js" defer></script>
     <!--=== jQuery Slick Min Js ===-->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick.min.js" defer></script>
     <!--=== jquery Fancybox Min Js ===-->
-    <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/fancybox.min.js" defer></script>
     <!--=== jquery Aos Min Js ===-->
-    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/aos.min.js" defer></script>
     <!--=== jquery Slicknav Js ===-->
-    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/jquery.slicknav.js" defer></script>
     <!--=== jquery Countdown Js ===-->
-    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"defer></script>
     <!--=== jquery Wow Min Js ===-->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/wow.min.js"defer></script>
     <!--=== jQuery Zoom Min Js ===-->
-    <script src="assets/js/jquery-zoom.min.js"></script>
+    <script src="assets/js/jquery-zoom.min.js" defer></script>
     <!--=== Custom Js ===-->
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js" defer></script>
     <!-- Prasad menu-bar modification -->
-    <script>
-      var timer;
-  
-      function openNav(id) {
-          // Hide all submenus initially
-          var menus = document.getElementsByClassName("menu-overlay");
-          for (var i = 0; i < menus.length; i++) {
-              menus[i].style.display = "none";
-          }
-          
-          // Display the submenu with the given id
-          document.getElementById(id).style.display = "block";
-      }
-  
-      function closeNav(id) {
-          // Delay closing the submenu to allow time for mouse to enter it
-          timer = setTimeout(function() {
-              // Hide the submenu with the given id
-              document.getElementById(id).style.display = "none";
-          }, 5000); // Adjust the delay as needed
-      }
-  
-      function cancelClose() { 
-          // Cancel the scheduled closing of the submenu
-          clearTimeout(timer);
-      }
-  
-  
-  
-      </script>
+    <script src="assets/js/fresh-menubar.js" defer></script>
   </body>
 </html>

@@ -3,8 +3,8 @@ session_start();
 
 function update_Lead($data)
 {
-
-    $key = 'keyjl7ypBT1kLHcfz';
+    // patrAf7yr1QA7VgXB
+    $key = 'patrAf7yr1QA7VgXB.7cadb9f3c805819ff964330a9ccfe5a4bc196bb8b20ae1a653302a9a70783f3d';
     $appid = 'appdgETqJH3dhQZEu';
 
     $fields = '{ "fields": { "Reason": "' . $data['reason'] . '", "First Name": "' . $data['fname'] . '", "Last Name": "' . $data['lname'] . '", "Email": "' . $data['email'] . '", "Phone Number": "' . $data['phone'] . '", "Company": "' . $data['company'] . '", "Location": "' . $data['location'] . '", "Message": "' . $data['message'] . '"} }';
